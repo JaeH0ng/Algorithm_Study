@@ -100,6 +100,71 @@ git commit -m "[1주차] 2557_Hello World / 브론즈5 / 5분" -m "https://www.a
 - commit 메시지 : `[DOCS] 주제명 - 이름`
 - ex. `[DOCS] 스택/큐 - JaeH0ng`
 
+## 백준 문제 표
+- 첫주차를 제외한 모든 주차에는 5개의 필수 문제와 1~2개의 도전 문제를 넣어뒀습니다.
+  - 필수 문제 : 5개(5개 아닌 주도 있습니다!) 문항
+  - 도전 문제는 필수가 아니며, 과제를 마친 뒤 추가적인 문제를 풀어보고 싶으신 분들은 풀어보시면 됩니다.
+| 주차 |  주제  | 문제 링크 | 문제 제목  |  난이도   |
+|------|--------|-----------|------------|-----------|
+| 0주차 | 깃허브 사용법 익히기 | [2588번](https://www.acmicpc.net/problem/2588) | 곱셈 | 브론즈3 |
+|0주차 | 깃허브 사용법 익히기 | [11718번](https://www.acmicpc.net/problem/11718) | 그대로 출력하기 | 브론즈3 | 
+|------|--------|-----------|------------|-----------|
+| 1주차 | 스택 | [17608번](https://www.acmicpc.net/problem/17608) | 막대기 | 브론즈4 |
+| 1주차 | 스택 | [9012번](https://www.acmicpc.net/problem/9012) | 괄호 | 실버4 |
+| 1주차 | 스택 | [10828번](https://www.acmicpc.net/problem/10828) | 스택 | 실버4 |
+| 1주차 | 큐 | [11866번](https://www.acmicpc.net/problem/11866) | 요세푸스 문제 0 | 실버5 |
+| 1주차 | 큐 | [26043번](https://www.acmicpc.net/problem/26043) | 식당 메뉴 | 실버4 |
+| 1주차 | 큐 | [1966번](https://www.acmicpc.net/problem/1966) | 프린터 큐 | 실버3(도전문제) |
+| 1주차 | 스택 | [15500번](https://www.acmicpc.net/problem/15500) | 이상한 하노이 탑 | 실버2(도전문제) |
+|------|--------|-----------|------------|-----------|
+| 2주차 | 힙 | [11004번](https://www.acmicpc.net/problem/11004) | K번째 수 | 실버5 |
+| 2주차 | 우선순위 큐 | [1417번](https://www.acmicpc.net/problem/1417) | 국회의원 선거 | 실버5 |
+| 2주차 | 트리 | [14244번](https://www.acmicpc.net/problem/14244) | 트리 만들기 | 실버5 |
+| 2주차 | 트리 | [9372번](https://www.acmicpc.net/problem/9372) | 상근이의 여행 | 실버5 |
+| 2주차 | 힙 | [1927번](https://www.acmicpc.net/problem/1927) | 최소 힙 | 실버2 |
+| 2주차 | 이진트리순회 | [1991번](https://www.acmicpc.net/problem/1991) | 트리 순회 | 실버1(도전문제) |
+|------|--------|-----------|------------|-----------|
+| 3주차 | DFS&BFS | [1260번](https://www.acmicpc.net/problem/1260) | DFS와 BFS | 실버2 |
+| 3주차 | DFS&BFS | [2606번](https://www.acmicpc.net/problem/2606) | 바이러스 | 실버3 |
+| 3주차 | DFS&BFS | [1012번](https://www.acmicpc.net/problem/1012) | 유기농 배추 | 실버2 |
+| 3주차 | DFS&BFS | [7576번](https://www.acmicpc.net/problem/7576) | 토마토 | 골드5(도전문제) |
+|------|--------|-----------|------------|-----------|
+| 4주차 | 해시 | [9933번](https://www.acmicpc.net/problem/9933) | 민균이의 전화번호 | 브론즈1 |
+| 4주차 | 해시 | [10815번](https://www.acmicpc.net/problem/10815) | 숫자 카드 | 실버5 |
+| 4주차 | 해시 | [7785번](https://www.acmicpc.net/problem/7785) | 회사에 있는 사람 | 실버5 |
+| 4주차 | 해시 | [4158번](https://www.acmicpc.net/problem/4158) | CD | 실버5 |
+| 4주차 | 해시 | [9375번](https://www.acmicpc.net/problem/9375) | 패션왕 신해빈 | 실버3 |
+| 4주차 | 해시 | [4358번](https://www.acmicpc.net/problem/4358) | 생태학 | 실버2(도전문제) |
+|------|--------|-----------|------------|-----------|
+| 5주차 | 그래프이론 | [1388번](https://www.acmicpc.net/problem/1388) | 바닥 장식 | 실버4 |
+| 5주차 | 그래프이론 | [16173번](https://www.acmicpc.net/problem/16173) | 점프왕 쩰리 (small) | 실버4 |
+| 5주차 | 그래프이론 | [10451번](https://www.acmicpc.net/problem/10451) | 순열 사이클 | 실버3 |
+| 5주차 | 그래프이론 | [11724번](https://www.acmicpc.net/problem/11724) | 연결 요소의 개수 | 실버2 |
+| 5주차 | 최단 경로 문제 | [18352번](https://www.acmicpc.net/problem/18352) | 특정 거리의 도시 찾기 | 실버2 |
+| 5주차 | 최단 경로 문제 | [11403번](https://www.acmicpc.net/problem/11403) | 경로 찾기 | 실버1(도전문제) |
+|------|--------|-----------|------------|-----------|
+| 6주차 | DP | [2775번](https://www.acmicpc.net/problem/2775) | 부녀회장이 될테야 | 브론즈1 |
+| 6주차 | DP | [1010번](https://www.acmicpc.net/problem/1010) | 다리 놓기 | 실버5 |
+| 6주차 | DP | [9655번](https://www.acmicpc.net/problem/9655) | 돌 게임 | 실버5 |
+| 6주차 | DP, 그리디 | [2839번](https://www.acmicpc.net/problem/2839) | 설탕 배달 | 실버4 |
+| 6주차 | DP | [1463번](https://www.acmicpc.net/problem/1463) | 1로 만들기 | 실버3 |
+| 6주차 | DP | [1149번](https://www.acmicpc.net/problem/1149) | RGB거리 | 실버1(도전문제) |
+|------|--------|-----------|------------|-----------|
+| 7주차 | 그리디 | [4796번](https://www.acmicpc.net/problem/4796) | 캠핑 | 브론즈1 |
+| 7주차 | 그리디 | [1789번](https://www.acmicpc.net/problem/1789) | 수들의 합 | 실버5 |
+| 7주차 | 그리디 | [11399번](https://www.acmicpc.net/problem/11399) | ATM | 실버4 |
+| 7주차 | 그리디 | [11047번](https://www.acmicpc.net/problem/11047) | 동전 0 | 실버4 |
+| 7주차 | 그리디 | [13305번](https://www.acmicpc.net/problem/13305) | 주유소 | 실버3 |
+| 7주차 | 그리디 | [1931번](https://www.acmicpc.net/problem/1931) | 회의실 배정 | 실버1(도전문제) |
+|------|--------|-----------|------------|-----------|
+| 8주차 | 이분탐색 | [10815번](https://www.acmicpc.net/problem/10815) | 숫자 카드 | 실버5 |
+| 8주차 | 이분탐색 | [1920번](https://www.acmicpc.net/problem/1920) | 수 찾기 | 실버4 |
+| 8주차 | 이분탐색 | [1072번](https://www.acmicpc.net/problem/1072) | 게임 | 실버3 |
+| 8주차 | 이분탐색 | [7795번](https://www.acmicpc.net/problem/7795) | 먹을 것인가 먹힐 것인가 | 실버3 |
+| 8주차 | 이분탐색 | [2343번](https://www.acmicpc.net/problem/2343) | 기타 레슨 | 실버1 |
+| 8주차 | 이분탐색 | [2470번](https://www.acmicpc.net/problem/2470) | 두 용액 | 골드5(도전문제) |
+
+
 
 ## 학습 시 참고자료
 - 아래는 학기 중에 제가 잘 참고한 유용재 교수님의 강의영상 자료입니다. 저희는 시간 관계 상 강의를 같이 듣진 않을거고, 개별 학습에 도움이 되시리라 생각하고 올립니다.
@@ -118,7 +183,7 @@ git commit -m "[1주차] 2557_Hello World / 브론즈5 / 5분" -m "https://www.a
 | 9    | Graph의 뜻과 여러 가지 구현 방법          | [Link](https://www.youtube.com/watch?v=PuJk0Fqj_ug&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=9) | 9    | 경우의 수 계산을 위한 기초 조합론          | [Link](https://www.youtube.com/watch?v=38JwPxFZEL8&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=9) |
 | 10   | Graph에 기반한 최적 Tree 산출             | [Link](https://www.youtube.com/watch?v=hVOPPz7IvFg&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=10) | 10   | 기계학습에서의 알고리즘과 그 토대          | [Link](https://www.youtube.com/watch?v=CSldi3vcCRQ&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=10) |
 | 11   | Graph에서의 최적 경로 문제와 해법          | [Link](https://www.youtube.com/watch?v=XpF6Pb4UMj8&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=11) | 11   | 확률적 알고리즘을 이용한 문제 해결         | [Link](https://www.youtube.com/watch?v=iEW3iPQMVrY&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=11) |
-|------|-------------------------------------------|----------------------------------------------------------------| 12   | P-NP 문제와 알고리즘의 내일               | [Link](https://www.youtube.com/watch?v=3qOPVaWjvbk&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=12) | 
+|-|-|-| 12   | P-NP 문제와 알고리즘의 내일               | [Link](https://www.youtube.com/watch?v=3qOPVaWjvbk&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=12) | 
 
 
 ## 이론 발표 준비 시 체크사항
