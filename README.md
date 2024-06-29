@@ -101,7 +101,7 @@ git commit -m "[1주차] 2557_Hello World / 브론즈5 / 5분" -m "https://www.a
 - 왼쪽이 자구, 오른쪽이 알고입니다. 
 
 | 번호 | 주제 | 유튜브 링크    | 번호 | 주제   | 유튜브 링크   |
-|------|-------------------------------------------|-------------------------------------------|------|-------------------------------------------|-------------------------------------------|
+|------|-------------------------------------------|----------------------|------|-------------------------------------------|----------------------|
 | 1    | Python 기초 문법 및 시간복잡도의 이해       | [Link](https://www.youtube.com/watch?v=-kjd6PPeihw&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=1) | 1    | 시간복잡도와 공간복잡도의 이해              | [Link](https://www.youtube.com/watch?v=3i6bae3Y7DE&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk) |
 | 2    | Linked List와 연결형 자료구조              | [Link](https://www.youtube.com/watch?v=eEYxduDJf9Q&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=2) | 2    | 정렬과 탐색을 위한 효과적인 방법           | [Link](https://www.youtube.com/watch?v=CqmxgSRE9Bc&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=2) |
 | 3    | Stack 자료구조의 이해와 응용               | [Link](https://www.youtube.com/watch?v=B1ZSqOtRwQ0&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=3) | 3    | 동적계획을 이용한 문제 해결 성능 제고      | [Link](https://www.youtube.com/watch?v=maAAxLCIWoA&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=3) |
