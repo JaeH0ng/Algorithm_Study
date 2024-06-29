@@ -33,7 +33,7 @@
     <td align="center"><a href="https://github.com/jasonwayn"><img src="https://avatars.githubusercontent.com/jasonwayn" width="130px;" alt=""></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/JaeH0ng"><b>JaeH0ng</b><br>스터디장</a></td>
+    <td align="center"><a href="https://github.com/JaeH0ng"><b>JaeH0ng</b></a><br><span style="font-size: 12px;">스터디장</span></td>
     <td align="center"><a href="https://github.com/Alchernix"><b>Alchernix</b></a></td>
     <td align="center"><a href="https://github.com/jasonwayn"><b>jasonwayn</b></a></td>
 
