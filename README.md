@@ -29,13 +29,13 @@
 <table>
  <tr>
     <td align="center"><a href="https://github.com/JaeH0ng"><img src="https://avatars.githubusercontent.com/JaeH0ng" width="130px;" alt=""></a></td>
-    <!--<td align="center"><a href="https://github.com/Alchernix"><img src="https://avatars.githubusercontent.com/Alchernix" width="130px;" alt=""></a></td>-->
-    <!--<td align="center"><a href="https://github.com/jasonwayn"><img src="https://avatars.githubusercontent.com/jasonwayn" width="130px;" alt=""></a></td>-->
+    <td align="center"><a href="https://github.com/Alchernix"><img src="https://avatars.githubusercontent.com/Alchernix" width="130px;" alt=""></a></td>
+    <td align="center"><a href="https://github.com/jasonwayn"><img src="https://avatars.githubusercontent.com/jasonwayn" width="130px;" alt=""></a></td>
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/JaeH0ng"><b>JaeH0ng</b></a></td>
-    <!--<td align="center"><a href="https://github.com/Alchernix"><b>Alchernix</b></a></td>-->
-    <!--<td align="center"><a href="https://github.com/jasonwayn"><b>jasonwayn</b></a></td>-->
+    <td align="center"><a href="https://github.com/Alchernix"><b>Alchernix</b></a></td>
+    <td align="center"><a href="https://github.com/jasonwayn"><b>jasonwayn</b></a></td>
 
   </tr>
   <tr> 
