@@ -102,7 +102,7 @@ git commit -m "[1주차] 2557_Hello World  브론즈5  5분" -m "https://www.acm
 
 ## PR 규칙
 - PR 제목 : `이름_날짜_문제번호`
-    - ex. `JaeH0ng_240629_2588번`
+    - ex. `JaeH0ng_240629_2588`
 - fork 저장소에서 이 base 저장소로 `PR`를 보낼 때, `create pull request`를 누르면 된다.
 - (optional)이때 comment를 남겨서 어떤 부분에서 어떤 오류가 있었고 어떻게 대처했는지 작성한다.
 
