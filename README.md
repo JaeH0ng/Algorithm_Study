@@ -98,35 +98,22 @@ git commit -m "[1주차] 2557_Hello World / 브론즈5 / 5분" -m "https://www.a
 
 ## 학습 시 참고자료
 - 아래는 학기 중에 제가 잘 참고한 유용재 교수님의 강의영상 자료입니다. 저희는 시간 관계 상 강의를 같이 듣진 않을거고, 개별 학습에 도움이 되시리라 생각하고 올립니다.
-  
-| 번호 | 주제                                      | 유튜브 링크                                                    |
-|------|-------------------------------------------|----------------------------------------------------------------|
-| 1    | Python 기초 문법 및 시간복잡도의 이해       | [Link](https://www.youtube.com/watch?v=-kjd6PPeihw&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=1) |
-| 2    | Linked List와 연결형 자료구조              | [Link](https://www.youtube.com/watch?v=eEYxduDJf9Q&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=2) |
-| 3    | Stack 자료구조의 이해와 응용               | [Link](https://www.youtube.com/watch?v=B1ZSqOtRwQ0&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=3) |
-| 4    | Queue와 환형 Queue의 이해                 | [Link](https://www.youtube.com/watch?v=7t5M4cAgNn4&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=4) |
-| 5    | 우선순위 Queue와 이진 Tree의 기초         | [Link](https://www.youtube.com/watch?v=H8r5bOxRlCk&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=5) |
-| 6    | 이진 Tree의 구현과 데이터 순회            | [Link](https://www.youtube.com/watch?v=LqiW6pqTZ9E&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=6) |
-| 7    | 균형을 고려한 여러 가지 Tree               | [Link](https://www.youtube.com/watch?v=KN5JxC5W3rQ&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=7) |
-| 8    | Hash Table을 통한 데이터의 적재           | [Link](https://www.youtube.com/watch?v=hyWEPQ6QpFQ&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=8) |
-| 9    | Graph의 뜻과 여러 가지 구현 방법          | [Link](https://www.youtube.com/watch?v=PuJk0Fqj_ug&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=9) |
-| 10   | Graph에 기반한 최적 Tree 산출             | [Link](https://www.youtube.com/watch?v=hVOPPz7IvFg&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=10) |
-| 11   | Graph에서의 최적 경로 문제와 해법          | [Link](https://www.youtube.com/watch?v=XpF6Pb4UMj8&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=11) |
-|------|-------------------------------------------|----------------------------------------------------------------|
-| 1    | 시간복잡도와 공간복잡도의 이해              | [Link](https://www.youtube.com/watch?v=3i6bae3Y7DE&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk) |
-| 2    | 정렬과 탐색을 위한 효과적인 방법           | [Link](https://www.youtube.com/watch?v=CqmxgSRE9Bc&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=2) |
-| 3    | 동적계획을 이용한 문제 해결 성능 제고      | [Link](https://www.youtube.com/watch?v=maAAxLCIWoA&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=3) |
-| 4    | 기초 정수론과 암호화 알고리즘             | [Link](https://www.youtube.com/watch?v=sRrGug5s1qA&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=4) |
-| 5    | 백트래킹을 이용한 해의 탐색과 그 실제      | [Link](https://www.youtube.com/watch?v=7ou6xU21aS0&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=5) |
-| 6    | 휴리스틱과 욕심쟁이 알고리즘              | [Link](https://www.youtube.com/watch?v=DD1FFQPUlhA&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=6) |
-| 7    | 분할정복의 뜻과 문제 해결에의 적용         | [Link](https://www.youtube.com/watch?v=vy_O-GobDU0&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=7) |
-| 8    | Python을 이용한 기하 알고리즘 입문         | [Link](https://www.youtube.com/watch?v=yvh5uUs7xeY&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=8) |
-| 9    | 경우의 수 계산을 위한 기초 조합론          | [Link](https://www.youtube.com/watch?v=38JwPxFZEL8&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=9) |
-| 10   | 기계학습에서의 알고리즘과 그 토대          | [Link](https://www.youtube.com/watch?v=CSldi3vcCRQ&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=10) |
-| 11   | 확률적 알고리즘을 이용한 문제 해결         | [Link](https://www.youtube.com/watch?v=iEW3iPQMVrY&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=11) |
-| 12   | P-NP 문제와 알고리즘의 내일               | [Link](https://www.youtube.com/watch?v=3qOPVaWjvbk&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=12) |
+- 왼쪽이 자구, 오른쪽이 알고입니다. 
 
-  
+| 번호 | 주제 | 유튜브 링크    | 번호 | 주제   | 유튜브 링크   |
+|------|-------------------------------------------|----------------------------------------------------------------|
+| 1    | Python 기초 문법 및 시간복잡도의 이해       | [Link](https://www.youtube.com/watch?v=-kjd6PPeihw&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=1) | 1    | 시간복잡도와 공간복잡도의 이해              | [Link](https://www.youtube.com/watch?v=3i6bae3Y7DE&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk) |
+| 2    | Linked List와 연결형 자료구조              | [Link](https://www.youtube.com/watch?v=eEYxduDJf9Q&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=2) | 2    | 정렬과 탐색을 위한 효과적인 방법           | [Link](https://www.youtube.com/watch?v=CqmxgSRE9Bc&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=2) |
+| 3    | Stack 자료구조의 이해와 응용               | [Link](https://www.youtube.com/watch?v=B1ZSqOtRwQ0&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=3) | 3    | 동적계획을 이용한 문제 해결 성능 제고      | [Link](https://www.youtube.com/watch?v=maAAxLCIWoA&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=3) |
+| 4    | Queue와 환형 Queue의 이해                 | [Link](https://www.youtube.com/watch?v=7t5M4cAgNn4&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=4) | 4    | 기초 정수론과 암호화 알고리즘             | [Link](https://www.youtube.com/watch?v=sRrGug5s1qA&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=4) |
+| 5    | 우선순위 Queue와 이진 Tree의 기초         | [Link](https://www.youtube.com/watch?v=H8r5bOxRlCk&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=5) | 5    | 백트래킹을 이용한 해의 탐색과 그 실제      | [Link](https://www.youtube.com/watch?v=7ou6xU21aS0&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=5) |
+| 6    | 이진 Tree의 구현과 데이터 순회            | [Link](https://www.youtube.com/watch?v=LqiW6pqTZ9E&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=6) | 6    | 휴리스틱과 욕심쟁이 알고리즘              | [Link](https://www.youtube.com/watch?v=DD1FFQPUlhA&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=6) |
+| 7    | 균형을 고려한 여러 가지 Tree               | [Link](https://www.youtube.com/watch?v=KN5JxC5W3rQ&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=7) | 7    | 분할정복의 뜻과 문제 해결에의 적용         | [Link](https://www.youtube.com/watch?v=vy_O-GobDU0&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=7) |
+| 8    | Hash Table을 통한 데이터의 적재           | [Link](https://www.youtube.com/watch?v=hyWEPQ6QpFQ&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=8) | 8    | Python을 이용한 기하 알고리즘 입문         | [Link](https://www.youtube.com/watch?v=yvh5uUs7xeY&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=8) |
+| 9    | Graph의 뜻과 여러 가지 구현 방법          | [Link](https://www.youtube.com/watch?v=PuJk0Fqj_ug&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=9) | 9    | 경우의 수 계산을 위한 기초 조합론          | [Link](https://www.youtube.com/watch?v=38JwPxFZEL8&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=9) |
+| 10   | Graph에 기반한 최적 Tree 산출             | [Link](https://www.youtube.com/watch?v=hVOPPz7IvFg&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=10) | 10   | 기계학습에서의 알고리즘과 그 토대          | [Link](https://www.youtube.com/watch?v=CSldi3vcCRQ&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=10) |
+| 11   | Graph에서의 최적 경로 문제와 해법          | [Link](https://www.youtube.com/watch?v=XpF6Pb4UMj8&list=PLKCRvMaRGaxUDf20UpyOX9HBPGYlyxY8P&index=11) | 11   | 확률적 알고리즘을 이용한 문제 해결         | [Link](https://www.youtube.com/watch?v=iEW3iPQMVrY&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=11) |
+|------|-------------------------------------------|----------------------------------------------------------------| 12   | P-NP 문제와 알고리즘의 내일               | [Link](https://www.youtube.com/watch?v=3qOPVaWjvbk&list=PLL3t9Nt4Hrfs8Pdq1qCDl7qDYCSy9gWXk&index=12) | 
 
 
 ## 이론 발표 준비 시 체크사항
