@@ -89,12 +89,12 @@
 
 ## commit 규칙
 ### 문제 풀이
-- commit 메시지 : `[X주차] BOJ 문제번호_문제이름 / 난이도 / 걸린 시간`
-- 타인 코드를 적은 경우 : `[X주차] BOJ 문제번호_문제이름 / 난이도 / 걸린 시간 / 못 푼 이유 or 핵심적이었던 부분 작성`
+- commit 메시지 : `[X주차] BOJ 문제번호_문제이름  난이도  걸린 시간`
+- 타인 코드를 적은 경우 : `[X주차] BOJ 문제번호_문제이름  난이도  걸린 시간  못 푼 이유 or 핵심적이었던 부분 작성`
 - description(optional) : 문제 주소
 - 터미널에서 작성법:
 ```
-git commit -m "[1주차] 2557_Hello World / 브론즈5 / 5분" -m "https://www.acmicpc.net/problem/2557"
+git commit -m "[1주차] 2557_Hello World  브론즈5  5분" -m "https://www.acmicpc.net/problem/2557"
 ```
 ### 발표자료(개념)
 - commit 메시지 : `[DOCS] 주제명 - 이름`
