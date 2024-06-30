@@ -116,8 +116,8 @@ git commit -m "[1주차]_BOJ_2557_Hello World_브론즈5_5분" -m "https://www.a
     
 | 주차 |  주제  | 문제 링크 | 문제 제목  |  난이도   |
 |------|--------|-----------|------------|-----------|
-| 0주차 | 깃허브 사용법 익히기 | <a href="https://www.acmicpc.net/problem/2588" target="_blank" rel="noopener noreferrer">2588번</a> | 곱셈 | 브론즈3 |
-|0주차 | 깃허브 사용법 익히기 | [11718번](https://www.acmicpc.net/problem/11718) | 그대로 출력하기 | 브론즈3 | 
+| 0주차 | 깃허브 사용법 익히기 | [2588번]( https://www.acmicpc.net/problem/2588 ) | 곱셈 | 브론즈3 |
+|0주차 | 깃허브 사용법 익히기 | [11718번](https://www.acmicpc.net/problem/11718) | 그대로 출력하기 | 브론즈3 |
 |------|--------|-----------|------------|-----------|
 | 1주차 | 스택 | [17608번](https://www.acmicpc.net/problem/17608) | 막대기 | 브론즈4 |
 | 1주차 | 스택 | [9012번](https://www.acmicpc.net/problem/9012) | 괄호 | 실버4 |
