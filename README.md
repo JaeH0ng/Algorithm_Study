@@ -31,15 +31,19 @@
     <td align="center"><a href="https://github.com/JaeH0ng"><img src="https://avatars.githubusercontent.com/JaeH0ng" width="130px;" alt=""></a></td>
     <td align="center"><a href="https://github.com/Alchernix"><img src="https://avatars.githubusercontent.com/Alchernix" width="130px;" alt=""></a></td>
     <td align="center"><a href="https://github.com/jasonwayn"><img src="https://avatars.githubusercontent.com/jasonwayn" width="130px;" alt=""></a></td>
+    <td align="center"><a href="https://github.com/rlaau"><img src="https://avatars.githubusercontent.com/jasonwayn" width="130px;" alt=""></a></td>
+
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/JaeH0ng"><b>JaeH0ng</b></a><br><span style="font-size: 12px;">스터디장</span></td>
     <td align="center"><a href="https://github.com/Alchernix"><b>Alchernix</b></a></td>
     <td align="center"><a href="https://github.com/jasonwayn"><b>jasonwayn</b></a></td>
+    <td align="center"><a href="https://github.com/rlaau"><b>jasonwayn</b></a></td>
 
   </tr>
   <tr> 
     <td align="center"><img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"></td>
+    <td align="center"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"></td>
     <td align="center"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"></td>
     <td align="center"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"></td>
 
