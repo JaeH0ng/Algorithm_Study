@@ -32,6 +32,8 @@
     <td align="center"><a href="https://github.com/Alchernix"><img src="https://avatars.githubusercontent.com/Alchernix" width="130px;" alt=""></a></td>
     <td align="center"><a href="https://github.com/jasonwayn"><img src="https://avatars.githubusercontent.com/jasonwayn" width="130px;" alt=""></a></td>
     <td align="center"><a href="https://github.com/rlaau"><img src="https://avatars.githubusercontent.com/rlaau" width="130px;" alt=""></a></td>
+    <td align="center"><a href="https://github.com/prestoo83"><img src="https://avatars.githubusercontent.com/prestoo83" width="130px;" alt=""></a></td>
+
 
   </tr>
   <tr>
@@ -39,6 +41,8 @@
     <td align="center"><a href="https://github.com/Alchernix"><b>Alchernix</b></a></td>
     <td align="center"><a href="https://github.com/jasonwayn"><b>jasonwayn</b></a></td>
     <td align="center"><a href="https://github.com/rlaau"><b>rlaau</b></a></td>
+    <td align="center"><a href="https://github.com/prestoo83"><b>prestoo83</b></a></td>
+
 
 
   </tr>
