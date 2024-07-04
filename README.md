@@ -133,59 +133,59 @@ git commit -m "[1주차]_BOJ_2557_Hello World_브론즈5_5분" -m "https://www.a
 | 0주차 | 깃허브 사용법 익히기 | [2588번](https://www.acmicpc.net/problem/2588) | 곱셈 | 브론즈3 |
 |0주차 | 깃허브 사용법 익히기 | [11718번](https://www.acmicpc.net/problem/11718) | 그대로 출력하기 | 브론즈3 |
 |------|--------|-----------|------------|-----------|
-| 1주차 | 스택 | [17608번](https://www.acmicpc.net/problem/17608) | 막대기 | 브론즈4 |
-| 1주차 | 스택 | [9012번](https://www.acmicpc.net/problem/9012) | 괄호 | 실버4 |
-| 1주차 | 스택 | [10828번](https://www.acmicpc.net/problem/10828) | 스택 | 실버4 |
-| 1주차 | 큐 | [11866번](https://www.acmicpc.net/problem/11866) | 요세푸스 문제 0 | 실버5 |
-| 1주차 | 큐 | [26043번](https://www.acmicpc.net/problem/26043) | 식당 메뉴 | 실버4 |
+| 1주차 | 스택 | [17608번](https://www.acmicpc.net/problem/17608) (prestoo83)| 막대기 | 브론즈4 |
+| 1주차 | 스택 | [9012번](https://www.acmicpc.net/problem/9012) (jasonwayn)| 괄호 | 실버4 |
+| 1주차 | 스택 | [10828번](https://www.acmicpc.net/problem/10828) (Alchernix)| 스택 | 실버4 |
+| 1주차 | 큐 | [11866번](https://www.acmicpc.net/problem/11866) (rlaau)| 요세푸스 문제 0 | 실버5 |
+| 1주차 | 큐 | [26043번](https://www.acmicpc.net/problem/26043) (JaeH0ng)| 식당 메뉴 | 실버4 |
 | 1주차 | 큐 | [1966번](https://www.acmicpc.net/problem/1966) | 프린터 큐 | 실버3(도전문제) |
 | 1주차 | 스택 | [15500번](https://www.acmicpc.net/problem/15500) | 이상한 하노이 탑 | 실버2(도전문제) |
 |------|--------|-----------|------------|-----------|
-| 2주차 | 힙 | [11004번](https://www.acmicpc.net/problem/11004) | K번째 수 | 실버5 |
-| 2주차 | 우선순위 큐 | [1417번](https://www.acmicpc.net/problem/1417) | 국회의원 선거 | 실버5 |
-| 2주차 | 트리 | [14244번](https://www.acmicpc.net/problem/14244) | 트리 만들기 | 실버5 |
-| 2주차 | 트리 | [9372번](https://www.acmicpc.net/problem/9372) | 상근이의 여행 | 실버5 |
-| 2주차 | 힙 | [1927번](https://www.acmicpc.net/problem/1927) | 최소 힙 | 실버2 |
+| 2주차 | 힙 | [11004번](https://www.acmicpc.net/problem/11004) (jasonwayn)| K번째 수 | 실버5 |
+| 2주차 | 우선순위 큐 | [1417번](https://www.acmicpc.net/problem/1417) (Alchernix)| 국회의원 선거 | 실버5 |
+| 2주차 | 트리 | [14244번](https://www.acmicpc.net/problem/14244) (rlaau)| 트리 만들기 | 실버5 |
+| 2주차 | 트리 | [9372번](https://www.acmicpc.net/problem/9372) (JaeH0ng)| 상근이의 여행 | 실버5 |
+| 2주차 | 힙 | [1927번](https://www.acmicpc.net/problem/1927) (prestoo83)| 최소 힙 | 실버2 |
 | 2주차 | 이진트리순회 | [1991번](https://www.acmicpc.net/problem/1991) | 트리 순회 | 실버1(도전문제) |
 |------|--------|-----------|------------|-----------|
-| 3주차 | DFS&BFS | [1260번](https://www.acmicpc.net/problem/1260) | DFS와 BFS | 실버2 |
-| 3주차 | DFS&BFS | [2606번](https://www.acmicpc.net/problem/2606) | 바이러스 | 실버3 |
-| 3주차 | DFS&BFS | [1012번](https://www.acmicpc.net/problem/1012) | 유기농 배추 | 실버2 |
+| 3주차 | DFS&BFS | [1260번](https://www.acmicpc.net/problem/1260) (Alchernix)| DFS와 BFS | 실버2 |
+| 3주차 | DFS&BFS | [2606번](https://www.acmicpc.net/problem/2606) (rlaau)| 바이러스 | 실버3 |
+| 3주차 | DFS&BFS | [1012번](https://www.acmicpc.net/problem/1012) (JaeH0ng)| 유기농 배추 | 실버2 |
 | 3주차 | DFS&BFS | [7576번](https://www.acmicpc.net/problem/7576) | 토마토 | 골드5(도전문제) |
 |------|--------|-----------|------------|-----------|
-| 4주차 | 해시 | [9933번](https://www.acmicpc.net/problem/9933) | 민균이의 전화번호 | 브론즈1 |
-| 4주차 | 해시 | [10815번](https://www.acmicpc.net/problem/10815) | 숫자 카드 | 실버5 |
-| 4주차 | 해시 | [7785번](https://www.acmicpc.net/problem/7785) | 회사에 있는 사람 | 실버5 |
-| 4주차 | 해시 | [4158번](https://www.acmicpc.net/problem/4158) | CD | 실버5 |
-| 4주차 | 해시 | [9375번](https://www.acmicpc.net/problem/9375) | 패션왕 신해빈 | 실버3 |
+| 4주차 | 해시 | [9933번](https://www.acmicpc.net/problem/9933) (rlaau)| 민균이의 전화번호 | 브론즈1 |
+| 4주차 | 해시 | [10815번](https://www.acmicpc.net/problem/10815) (JaeH0ng)| 숫자 카드 | 실버5 |
+| 4주차 | 해시 | [7785번](https://www.acmicpc.net/problem/7785) (prestoo83)| 회사에 있는 사람 | 실버5 |
+| 4주차 | 해시 | [4158번](https://www.acmicpc.net/problem/4158) (jasonwayn)| CD | 실버5 |
+| 4주차 | 해시 | [9375번](https://www.acmicpc.net/problem/9375) (Alchernix)| 패션왕 신해빈 | 실버3 |
 | 4주차 | 해시 | [4358번](https://www.acmicpc.net/problem/4358) | 생태학 | 실버2(도전문제) |
 |------|--------|-----------|------------|-----------|
-| 5주차 | 그래프이론 | [1388번](https://www.acmicpc.net/problem/1388) | 바닥 장식 | 실버4 |
-| 5주차 | 그래프이론 | [16173번](https://www.acmicpc.net/problem/16173) | 점프왕 쩰리 (small) | 실버4 |
-| 5주차 | 그래프이론 | [10451번](https://www.acmicpc.net/problem/10451) | 순열 사이클 | 실버3 |
-| 5주차 | 그래프이론 | [11724번](https://www.acmicpc.net/problem/11724) | 연결 요소의 개수 | 실버2 |
-| 5주차 | 최단 경로 문제 | [18352번](https://www.acmicpc.net/problem/18352) | 특정 거리의 도시 찾기 | 실버2 |
+| 5주차 | 그래프이론 | [1388번](https://www.acmicpc.net/problem/1388) (JaeH0ng)| 바닥 장식 | 실버4 |
+| 5주차 | 그래프이론 | [16173번](https://www.acmicpc.net/problem/16173) (prestoo83)| 점프왕 쩰리 (small) | 실버4 |
+| 5주차 | 그래프이론 | [10451번](https://www.acmicpc.net/problem/10451) (jasonwayn)| 순열 사이클 | 실버3 |
+| 5주차 | 그래프이론 | [11724번](https://www.acmicpc.net/problem/11724) (Alchernix)| 연결 요소의 개수 | 실버2 |
+| 5주차 | 최단 경로 문제 | [18352번](https://www.acmicpc.net/problem/18352) (rlaau)| 특정 거리의 도시 찾기 | 실버2 |
 | 5주차 | 최단 경로 문제 | [11403번](https://www.acmicpc.net/problem/11403) | 경로 찾기 | 실버1(도전문제) |
 |------|--------|-----------|------------|-----------|
-| 6주차 | DP | [2775번](https://www.acmicpc.net/problem/2775) | 부녀회장이 될테야 | 브론즈1 |
-| 6주차 | DP | [1010번](https://www.acmicpc.net/problem/1010) | 다리 놓기 | 실버5 |
-| 6주차 | DP | [9655번](https://www.acmicpc.net/problem/9655) | 돌 게임 | 실버5 |
-| 6주차 | DP, 그리디 | [2839번](https://www.acmicpc.net/problem/2839) | 설탕 배달 | 실버4 |
-| 6주차 | DP | [1463번](https://www.acmicpc.net/problem/1463) | 1로 만들기 | 실버3 |
+| 6주차 | DP | [2775번](https://www.acmicpc.net/problem/2775) (prestoo83)| 부녀회장이 될테야 | 브론즈1 |
+| 6주차 | DP | [1010번](https://www.acmicpc.net/problem/1010) (jasonwayn)| 다리 놓기 | 실버5 |
+| 6주차 | DP | [9655번](https://www.acmicpc.net/problem/9655) (Alchernix)| 돌 게임 | 실버5 |
+| 6주차 | DP, 그리디 | [2839번](https://www.acmicpc.net/problem/2839) (rlaau)| 설탕 배달 | 실버4 |
+| 6주차 | DP | [1463번](https://www.acmicpc.net/problem/1463) (JaeH0ng)| 1로 만들기 | 실버3 |
 | 6주차 | DP | [1149번](https://www.acmicpc.net/problem/1149) | RGB거리 | 실버1(도전문제) |
 |------|--------|-----------|------------|-----------|
-| 7주차 | 그리디 | [4796번](https://www.acmicpc.net/problem/4796) | 캠핑 | 브론즈1 |
-| 7주차 | 그리디 | [1789번](https://www.acmicpc.net/problem/1789) | 수들의 합 | 실버5 |
-| 7주차 | 그리디 | [11399번](https://www.acmicpc.net/problem/11399) | ATM | 실버4 |
-| 7주차 | 그리디 | [11047번](https://www.acmicpc.net/problem/11047) | 동전 0 | 실버4 |
-| 7주차 | 그리디 | [13305번](https://www.acmicpc.net/problem/13305) | 주유소 | 실버3 |
+| 7주차 | 그리디 | [4796번](https://www.acmicpc.net/problem/4796) (Alchernix)| 캠핑 | 브론즈1 |
+| 7주차 | 그리디 | [1789번](https://www.acmicpc.net/problem/1789) (rlaau)| 수들의 합 | 실버5 |
+| 7주차 | 그리디 | [11399번](https://www.acmicpc.net/problem/11399) (JaeH0ng)| ATM | 실버4 |
+| 7주차 | 그리디 | [11047번](https://www.acmicpc.net/problem/11047) (prestoo83)| 동전 0 | 실버4 |
+| 7주차 | 그리디 | [13305번](https://www.acmicpc.net/problem/13305) (jasonwayn)| 주유소 | 실버3 |
 | 7주차 | 그리디 | [1931번](https://www.acmicpc.net/problem/1931) | 회의실 배정 | 실버1(도전문제) |
 |------|--------|-----------|------------|-----------|
-| 8주차 | 이분탐색 | [10815번](https://www.acmicpc.net/problem/10815) | 숫자 카드 | 실버5 |
-| 8주차 | 이분탐색 | [1920번](https://www.acmicpc.net/problem/1920) | 수 찾기 | 실버4 |
-| 8주차 | 이분탐색 | [1072번](https://www.acmicpc.net/problem/1072) | 게임 | 실버3 |
-| 8주차 | 이분탐색 | [7795번](https://www.acmicpc.net/problem/7795) | 먹을 것인가 먹힐 것인가 | 실버3 |
-| 8주차 | 이분탐색 | [2343번](https://www.acmicpc.net/problem/2343) | 기타 레슨 | 실버1 |
+| 8주차 | 이분탐색 | [10815번](https://www.acmicpc.net/problem/10815) (rlaau)| 숫자 카드 | 실버5 |
+| 8주차 | 이분탐색 | [1920번](https://www.acmicpc.net/problem/1920) (JaeH0ng)| 수 찾기 | 실버4 |
+| 8주차 | 이분탐색 | [1072번](https://www.acmicpc.net/problem/1072) (prestoo83)| 게임 | 실버3 |
+| 8주차 | 이분탐색 | [7795번](https://www.acmicpc.net/problem/7795) (jasonwayn)| 먹을 것인가 먹힐 것인가 | 실버3 |
+| 8주차 | 이분탐색 | [2343번](https://www.acmicpc.net/problem/2343) (Alchernix)| 기타 레슨 | 실버1 |
 | 8주차 | 이분탐색 | [2470번](https://www.acmicpc.net/problem/2470) | 두 용액 | 골드5(도전문제) |
 
 
