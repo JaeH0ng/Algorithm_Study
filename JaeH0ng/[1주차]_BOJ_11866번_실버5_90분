@@ -1,0 +1,39 @@
+#include <iostream>
+#include <queue>
+#include <string>
+#include <vector>
+using namespace std;
+
+int main() {
+    int n, k;
+    cin >> n >> k;
+
+    // n에 대하여 값을 참고할 리스트 만들기
+    vector<int> vt;
+    for (int j = 1; j <= n; j++) {
+        vt.push_back(j);
+    }
+    
+    int index = 0;
+    queue<int> q;
+
+    for (int i = 0; i < n; i++) {
+        index = (index + k - 1) % vt.size();  // 현재 인덱스를 k-1씩 증가시킴
+        q.push(vt[index]);  // k번째 원소를 큐에 추가
+        vt.erase(vt.begin() + index);  // 해당 원소를 벡터에서 제거
+    }
+    
+    // 저장된 queue에서 문장 출력
+    string str = "<";
+    while (!q.empty()) {
+        str += to_string(q.front());
+        q.pop();
+        if (!q.empty()) {
+            str += ", ";
+        }
+    }
+    str += ">";
+    cout << str << endl;
+    
+    return 0;
+}
