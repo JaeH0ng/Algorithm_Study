@@ -7,11 +7,11 @@
   </tr>
   <tr>
     <td>스터디 장소</td>
-    <td>온라인, 오프라인(0주차 스터디 중 결정됩니다)</td>
+    <td>(1주차) 고려대 SK미래관 스터디룸</td>
   </tr>
   <tr>
     <td>정기 스터디 시간</td>
-    <td>X요일 XX:00 ~ XX:00[2h](0주차 스터디 중 결정됩니다)</td>
+    <td>금요일 13:00 ~ 15:00[2h]</td>
   </tr>
   <tr>
     <td>플랫폼</td>
@@ -32,6 +32,8 @@
     <td align="center"><a href="https://github.com/Alchernix"><img src="https://avatars.githubusercontent.com/Alchernix" width="130px;" alt=""></a></td>
     <td align="center"><a href="https://github.com/jasonwayn"><img src="https://avatars.githubusercontent.com/jasonwayn" width="130px;" alt=""></a></td>
     <td align="center"><a href="https://github.com/rlaau"><img src="https://avatars.githubusercontent.com/rlaau" width="130px;" alt=""></a></td>
+    <td align="center"><a href="https://github.com/prestoo83"><img src="https://avatars.githubusercontent.com/prestoo83" width="130px;" alt=""></a></td>
+
 
   </tr>
   <tr>
@@ -39,6 +41,8 @@
     <td align="center"><a href="https://github.com/Alchernix"><b>Alchernix</b></a></td>
     <td align="center"><a href="https://github.com/jasonwayn"><b>jasonwayn</b></a></td>
     <td align="center"><a href="https://github.com/rlaau"><b>rlaau</b></a></td>
+    <td align="center"><a href="https://github.com/prestoo83"><b>prestoo83</b></a></td>
+
 
 
   </tr>
@@ -47,34 +51,35 @@
     <td align="center"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"></td>
     <td align="center"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"></td>
     <td align="center"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"></td>
+    <td align="center"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"></td>
+
 
 
   </tr> 
 </table>
 
 ## 스터디 규칙
-0. 문제 풀기는 개별로 하고, 같이 모였을 때는 수업을 하는 형태로 진행하겠습니다.
+0. 문제 풀이 - 개별, 이론 + 풀어온 문제 리뷰 : 스터디 통해 진행
     - 주차가 쌓이면서 익숙해지면, 같이 모여서 시간 정해두고 한 문제를 풀어보는 방법도 고려하겠습니다.
       
-1. 해당 깃허브 리포지토리에 백준 문제 링크를 담은 표를 생성해둘 예정입니다.
-
-2. 각자 진행 상황에 맞춰 다섯 문제를 풀고, github에 자신의 코드를 업로드합니다.(아래 깃허브 업로드 방법 참고)
-    - 과제를 다 못 끝내는 경우, 벌금 제도가 필요할지??@@
+1. 각자 진행 상황에 맞춰 다섯 문제를 풀고, github에 자신의 코드를 업로드합니다.(아래 깃허브 업로드 방법 참고)
+    - 문제표에 자신에게 할당 된 문제가 있습니다. 해당 문제의 풀이에 대해서 발표를 할 예정이니, 잘 준비하여 오시기 바랍니다.
+  
+2. 매주 스터디가 끝날 때, 그 다음주 스터디에 대한 진행자 1인을 선정합니다.
+    - 진행자는 다음 주차 주제에 대한 30분 분량의 발표를 준비해옵니다.
+    - 30분 분량의 `발표자료`를 만든 뒤, `목요일(스터디 전날) 밤 12시`까지 `발표 자료`폴더에 업로드합니다.
       
-3. 매주 스터디가 끝날 때, 그 다음주 스터디에 대한 진행자 1인을 선정합니다.
-    - 진행자는 다음 주차 주제에 대한 20분 분량의 발표를 준비해옵니다.
-    - 20분 분량의 `발표자료`를 만든 뒤, `스터디 전날`까지 `발표 자료`폴더에 업로드합니다.
-      
-4. 스터디는 상황에 따라 온/오프라인으로, 주/격주 2시간 진행합니다. (0주차 스터디 중 결정됩니다)
-    - 요일 : (0주차 스터디 중 결정됩니다)
+3. 스터디는 상황에 따라 온/오프라인으로, 주 2시간 씩 진행합니다.
+    - 요일&시간 : 금요일 오후 13시~
     - 장소 : 
       - (온라인) zoom
-      - (오프라인) (0주차 스터디 중 결정됩니다)
+      - (오프라인) (추후 정해질 예정)
+4. 1주차 스터디 이후로는 스터디 인원을 픽스할 예정이고, 중도 이탈에 대해서는 벌금을 강하게 받겠습니다. 남은 스터디원들의 혼란을 줄이기 위함입니다.(이탈은 1주차 스터디 전까지, 잘 고민해주시기 바랍니다.)
         
 #### 스터디 순서
   1. 이론 개념 설명
     - 40분 : 진행자 이론 발표, 참여자 피드백
-      - 진행자는 자신이 학습한 이론 내용에 대해 30분 분량의 발표를 준비해옵니다.
+      - 진행자는 자신이 학습한 이론 내용에 대해 30분 동안 발표를 합니다. 이때 스터디원들은 진행자가 전날 올린 발표 자료를 다운 받아옵니다.
       - 진행자의 발표가 끝난 뒤에, 참여자들은 10분 간 이론에 대해 추가되었으면 하는 내용 혹은 각자 자신이 알고리즘 학습을 하며 새롭게 알게 된 내용에 대해 피드백합니다.
     
   2. 문제풀이
@@ -127,59 +132,59 @@ git commit -m "[1주차]_BOJ_2557_Hello World_브론즈5_5분" -m "https://www.a
 | 0주차 | 깃허브 사용법 익히기 | [2588번](https://www.acmicpc.net/problem/2588) | 곱셈 | 브론즈3 |
 |0주차 | 깃허브 사용법 익히기 | [11718번](https://www.acmicpc.net/problem/11718) | 그대로 출력하기 | 브론즈3 |
 |------|--------|-----------|------------|-----------|
-| 1주차 | 스택 | [17608번](https://www.acmicpc.net/problem/17608) | 막대기 | 브론즈4 |
-| 1주차 | 스택 | [9012번](https://www.acmicpc.net/problem/9012) | 괄호 | 실버4 |
-| 1주차 | 스택 | [10828번](https://www.acmicpc.net/problem/10828) | 스택 | 실버4 |
-| 1주차 | 큐 | [11866번](https://www.acmicpc.net/problem/11866) | 요세푸스 문제 0 | 실버5 |
-| 1주차 | 큐 | [26043번](https://www.acmicpc.net/problem/26043) | 식당 메뉴 | 실버4 |
+| 1주차 | 스택 | [17608번](https://www.acmicpc.net/problem/17608) (prestoo83)| 막대기 | 브론즈4 |
+| 1주차 | 스택 | [9012번](https://www.acmicpc.net/problem/9012) (jasonwayn)| 괄호 | 실버4 |
+| 1주차 | 스택 | [10828번](https://www.acmicpc.net/problem/10828) (Alchernix)| 스택 | 실버4 |
+| 1주차 | 큐 | [11866번](https://www.acmicpc.net/problem/11866) (rlaau)| 요세푸스 문제 0 | 실버5 |
+| 1주차 | 큐 | [26043번](https://www.acmicpc.net/problem/26043) (JaeH0ng)| 식당 메뉴 | 실버4 |
 | 1주차 | 큐 | [1966번](https://www.acmicpc.net/problem/1966) | 프린터 큐 | 실버3(도전문제) |
 | 1주차 | 스택 | [15500번](https://www.acmicpc.net/problem/15500) | 이상한 하노이 탑 | 실버2(도전문제) |
 |------|--------|-----------|------------|-----------|
-| 2주차 | 힙 | [11004번](https://www.acmicpc.net/problem/11004) | K번째 수 | 실버5 |
-| 2주차 | 우선순위 큐 | [1417번](https://www.acmicpc.net/problem/1417) | 국회의원 선거 | 실버5 |
-| 2주차 | 트리 | [14244번](https://www.acmicpc.net/problem/14244) | 트리 만들기 | 실버5 |
-| 2주차 | 트리 | [9372번](https://www.acmicpc.net/problem/9372) | 상근이의 여행 | 실버5 |
-| 2주차 | 힙 | [1927번](https://www.acmicpc.net/problem/1927) | 최소 힙 | 실버2 |
+| 2주차 | 힙 | [11004번](https://www.acmicpc.net/problem/11004) (jasonwayn)| K번째 수 | 실버5 |
+| 2주차 | 우선순위 큐 | [1417번](https://www.acmicpc.net/problem/1417) (Alchernix)| 국회의원 선거 | 실버5 |
+| 2주차 | 트리 | [14244번](https://www.acmicpc.net/problem/14244) (rlaau)| 트리 만들기 | 실버5 |
+| 2주차 | 트리 | [9372번](https://www.acmicpc.net/problem/9372) (JaeH0ng)| 상근이의 여행 | 실버5 |
+| 2주차 | 힙 | [1927번](https://www.acmicpc.net/problem/1927) (prestoo83)| 최소 힙 | 실버2 |
 | 2주차 | 이진트리순회 | [1991번](https://www.acmicpc.net/problem/1991) | 트리 순회 | 실버1(도전문제) |
 |------|--------|-----------|------------|-----------|
-| 3주차 | DFS&BFS | [1260번](https://www.acmicpc.net/problem/1260) | DFS와 BFS | 실버2 |
-| 3주차 | DFS&BFS | [2606번](https://www.acmicpc.net/problem/2606) | 바이러스 | 실버3 |
-| 3주차 | DFS&BFS | [1012번](https://www.acmicpc.net/problem/1012) | 유기농 배추 | 실버2 |
+| 3주차 | DFS&BFS | [1260번](https://www.acmicpc.net/problem/1260) (Alchernix)| DFS와 BFS | 실버2 |
+| 3주차 | DFS&BFS | [2606번](https://www.acmicpc.net/problem/2606) (rlaau)| 바이러스 | 실버3 |
+| 3주차 | DFS&BFS | [1012번](https://www.acmicpc.net/problem/1012) (JaeH0ng)| 유기농 배추 | 실버2 |
 | 3주차 | DFS&BFS | [7576번](https://www.acmicpc.net/problem/7576) | 토마토 | 골드5(도전문제) |
 |------|--------|-----------|------------|-----------|
-| 4주차 | 해시 | [9933번](https://www.acmicpc.net/problem/9933) | 민균이의 전화번호 | 브론즈1 |
-| 4주차 | 해시 | [10815번](https://www.acmicpc.net/problem/10815) | 숫자 카드 | 실버5 |
-| 4주차 | 해시 | [7785번](https://www.acmicpc.net/problem/7785) | 회사에 있는 사람 | 실버5 |
-| 4주차 | 해시 | [4158번](https://www.acmicpc.net/problem/4158) | CD | 실버5 |
-| 4주차 | 해시 | [9375번](https://www.acmicpc.net/problem/9375) | 패션왕 신해빈 | 실버3 |
+| 4주차 | 해시 | [9933번](https://www.acmicpc.net/problem/9933) (rlaau)| 민균이의 전화번호 | 브론즈1 |
+| 4주차 | 해시 | [10815번](https://www.acmicpc.net/problem/10815) (JaeH0ng)| 숫자 카드 | 실버5 |
+| 4주차 | 해시 | [7785번](https://www.acmicpc.net/problem/7785) (prestoo83)| 회사에 있는 사람 | 실버5 |
+| 4주차 | 해시 | [4158번](https://www.acmicpc.net/problem/4158) (jasonwayn)| CD | 실버5 |
+| 4주차 | 해시 | [9375번](https://www.acmicpc.net/problem/9375) (Alchernix)| 패션왕 신해빈 | 실버3 |
 | 4주차 | 해시 | [4358번](https://www.acmicpc.net/problem/4358) | 생태학 | 실버2(도전문제) |
 |------|--------|-----------|------------|-----------|
-| 5주차 | 그래프이론 | [1388번](https://www.acmicpc.net/problem/1388) | 바닥 장식 | 실버4 |
-| 5주차 | 그래프이론 | [16173번](https://www.acmicpc.net/problem/16173) | 점프왕 쩰리 (small) | 실버4 |
-| 5주차 | 그래프이론 | [10451번](https://www.acmicpc.net/problem/10451) | 순열 사이클 | 실버3 |
-| 5주차 | 그래프이론 | [11724번](https://www.acmicpc.net/problem/11724) | 연결 요소의 개수 | 실버2 |
-| 5주차 | 최단 경로 문제 | [18352번](https://www.acmicpc.net/problem/18352) | 특정 거리의 도시 찾기 | 실버2 |
+| 5주차 | 그래프이론 | [1388번](https://www.acmicpc.net/problem/1388) (JaeH0ng)| 바닥 장식 | 실버4 |
+| 5주차 | 그래프이론 | [16173번](https://www.acmicpc.net/problem/16173) (prestoo83)| 점프왕 쩰리 (small) | 실버4 |
+| 5주차 | 그래프이론 | [10451번](https://www.acmicpc.net/problem/10451) (jasonwayn)| 순열 사이클 | 실버3 |
+| 5주차 | 그래프이론 | [11724번](https://www.acmicpc.net/problem/11724) (Alchernix)| 연결 요소의 개수 | 실버2 |
+| 5주차 | 최단 경로 문제 | [18352번](https://www.acmicpc.net/problem/18352) (rlaau)| 특정 거리의 도시 찾기 | 실버2 |
 | 5주차 | 최단 경로 문제 | [11403번](https://www.acmicpc.net/problem/11403) | 경로 찾기 | 실버1(도전문제) |
 |------|--------|-----------|------------|-----------|
-| 6주차 | DP | [2775번](https://www.acmicpc.net/problem/2775) | 부녀회장이 될테야 | 브론즈1 |
-| 6주차 | DP | [1010번](https://www.acmicpc.net/problem/1010) | 다리 놓기 | 실버5 |
-| 6주차 | DP | [9655번](https://www.acmicpc.net/problem/9655) | 돌 게임 | 실버5 |
-| 6주차 | DP, 그리디 | [2839번](https://www.acmicpc.net/problem/2839) | 설탕 배달 | 실버4 |
-| 6주차 | DP | [1463번](https://www.acmicpc.net/problem/1463) | 1로 만들기 | 실버3 |
+| 6주차 | DP | [2775번](https://www.acmicpc.net/problem/2775) (prestoo83)| 부녀회장이 될테야 | 브론즈1 |
+| 6주차 | DP | [1010번](https://www.acmicpc.net/problem/1010) (jasonwayn)| 다리 놓기 | 실버5 |
+| 6주차 | DP | [9655번](https://www.acmicpc.net/problem/9655) (Alchernix)| 돌 게임 | 실버5 |
+| 6주차 | DP, 그리디 | [2839번](https://www.acmicpc.net/problem/2839) (rlaau)| 설탕 배달 | 실버4 |
+| 6주차 | DP | [1463번](https://www.acmicpc.net/problem/1463) (JaeH0ng)| 1로 만들기 | 실버3 |
 | 6주차 | DP | [1149번](https://www.acmicpc.net/problem/1149) | RGB거리 | 실버1(도전문제) |
 |------|--------|-----------|------------|-----------|
-| 7주차 | 그리디 | [4796번](https://www.acmicpc.net/problem/4796) | 캠핑 | 브론즈1 |
-| 7주차 | 그리디 | [1789번](https://www.acmicpc.net/problem/1789) | 수들의 합 | 실버5 |
-| 7주차 | 그리디 | [11399번](https://www.acmicpc.net/problem/11399) | ATM | 실버4 |
-| 7주차 | 그리디 | [11047번](https://www.acmicpc.net/problem/11047) | 동전 0 | 실버4 |
-| 7주차 | 그리디 | [13305번](https://www.acmicpc.net/problem/13305) | 주유소 | 실버3 |
+| 7주차 | 그리디 | [4796번](https://www.acmicpc.net/problem/4796) (Alchernix)| 캠핑 | 브론즈1 |
+| 7주차 | 그리디 | [1789번](https://www.acmicpc.net/problem/1789) (rlaau)| 수들의 합 | 실버5 |
+| 7주차 | 그리디 | [11399번](https://www.acmicpc.net/problem/11399) (JaeH0ng)| ATM | 실버4 |
+| 7주차 | 그리디 | [11047번](https://www.acmicpc.net/problem/11047) (prestoo83)| 동전 0 | 실버4 |
+| 7주차 | 그리디 | [13305번](https://www.acmicpc.net/problem/13305) (jasonwayn)| 주유소 | 실버3 |
 | 7주차 | 그리디 | [1931번](https://www.acmicpc.net/problem/1931) | 회의실 배정 | 실버1(도전문제) |
 |------|--------|-----------|------------|-----------|
-| 8주차 | 이분탐색 | [10815번](https://www.acmicpc.net/problem/10815) | 숫자 카드 | 실버5 |
-| 8주차 | 이분탐색 | [1920번](https://www.acmicpc.net/problem/1920) | 수 찾기 | 실버4 |
-| 8주차 | 이분탐색 | [1072번](https://www.acmicpc.net/problem/1072) | 게임 | 실버3 |
-| 8주차 | 이분탐색 | [7795번](https://www.acmicpc.net/problem/7795) | 먹을 것인가 먹힐 것인가 | 실버3 |
-| 8주차 | 이분탐색 | [2343번](https://www.acmicpc.net/problem/2343) | 기타 레슨 | 실버1 |
+| 8주차 | 이분탐색 | [10815번](https://www.acmicpc.net/problem/10815) (rlaau)| 숫자 카드 | 실버5 |
+| 8주차 | 이분탐색 | [1920번](https://www.acmicpc.net/problem/1920) (JaeH0ng)| 수 찾기 | 실버4 |
+| 8주차 | 이분탐색 | [1072번](https://www.acmicpc.net/problem/1072) (prestoo83)| 게임 | 실버3 |
+| 8주차 | 이분탐색 | [7795번](https://www.acmicpc.net/problem/7795) (jasonwayn)| 먹을 것인가 먹힐 것인가 | 실버3 |
+| 8주차 | 이분탐색 | [2343번](https://www.acmicpc.net/problem/2343) (Alchernix)| 기타 레슨 | 실버1 |
 | 8주차 | 이분탐색 | [2470번](https://www.acmicpc.net/problem/2470) | 두 용액 | 골드5(도전문제) |
 
 
@@ -206,7 +211,7 @@ git commit -m "[1주차]_BOJ_2557_Hello World_브론즈5_5분" -m "https://www.a
 
 ## 이론 발표 준비 시 체크사항
 - 시간복잡도와 공간복잡도도 체크한 뒤, 해당 자료구조/알고리즘의 장단점을 비교하기
-- 20분이 생각보다 길지 않으니, 최대한 핵심 위주로
+- 30분이 생각보다 길지 않으니 최대한 핵심 위주로
 - 이론 피드백 이후, 새로 알게 된 사실도 꼭 메모해서 정리하기
 
 ## 스터디 주의 사항

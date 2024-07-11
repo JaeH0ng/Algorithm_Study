@@ -1,0 +1,10 @@
+num1 = input()
+num2 = input()
+sum = 0
+
+for i in range(len(num1)):
+    result = int(num1)*int(num2[i])
+    print(result)
+    sum += result*(10**(len(num1)-i-1))
+
+print(sum)

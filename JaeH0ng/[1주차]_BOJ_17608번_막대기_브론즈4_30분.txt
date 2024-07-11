@@ -1,0 +1,30 @@
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main(){
+    int input;
+    stack<int> st;
+    cin >> input;
+    
+    // 스택에 전부 push(이러면 맨 오른쪽 막대기가 스택의 top에 있다.)
+    for(int i=input; i>0; i--){
+        int line2=0;
+        cin >> line2;
+        st.push(line2);
+    }
+    
+    // 스택에서 pop하면서, 만약 현재 막대기 길이 max인거보다 더 큰게 나올때만 count++한다.
+    int count = 1; // 초기 막대기 카운트
+    int top = st.top();
+    while(!st.empty()){
+        st.pop();
+        if(!st.empty() && st.top()>top){
+            top = st.top();
+            count++;
+        }
+    }
+    
+    cout << count << endl;
+    return 0;
+}

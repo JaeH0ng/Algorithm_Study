@@ -1,0 +1,95 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Stack class
+class Stack{
+public:
+    Stack();
+    ~Stack();
+    void push(const int& item);
+    int pop();
+    int size();
+    bool empty();
+    int Top();
+private:
+    int* array;
+    int capacity;
+    int top;
+};
+
+void stackFunc(Stack& st, string str);
+
+// main()
+int main(){
+    int nInput;
+    Stack st;
+    string str;
+    cin>>nInput;
+    cin.ignore();
+    for(int i=0; i<nInput; i++){
+        getline(cin, str);
+        stackFunc(st, str);
+    }
+    return 0;
+}
+
+
+// about stackFunc()
+void stackFunc(Stack& st, string str){
+    if(str.substr(0,4) == "push"){
+        int num = stoi(str.substr(5));
+        st.push(num);
+    }
+    else if(str.substr(0,3) == "pop"){
+        cout << st.pop() << endl;
+    }
+    else if(str.substr(0,3) == "top"){
+        cout << st.Top() << endl;
+    }
+    else if(str.substr(0,4) == "size"){
+        cout << st.size() << endl;
+    }
+    else if(str.substr(0,5) == "empty"){
+        cout << (st.empty() ? 1 : 0) << endl;
+    }
+}
+
+
+// about Stack class method
+Stack::Stack(){
+    capacity = 10000;
+    top = -1;
+    array = new int[capacity];
+}
+
+Stack::~Stack(){
+    delete[] array;
+}
+void Stack::push(const int& item){
+    array[++top] = item;
+}
+
+int Stack::pop(){
+    if(top == -1){
+        return -1;
+    } else {
+        return array[top--];
+    }
+}
+
+int Stack::size(){
+    return top + 1;
+}
+
+bool Stack::empty(){
+    return top == -1;
+}
+
+int Stack::Top() {
+    if(top == -1){
+        return -1;
+    } else {
+        return array[top];
+    }
+}
