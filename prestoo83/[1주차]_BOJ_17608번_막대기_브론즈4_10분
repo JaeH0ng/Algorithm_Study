@@ -1,0 +1,18 @@
+import sys
+
+attempt = int(input())
+
+stack = []
+max = 0
+count = 0
+
+for i in range(attempt):
+    num = int(sys.stdin.readline())
+    stack.append(num)
+
+for j in range(len(stack)-1, -1, -1):
+    if stack[j] > max:
+        count += 1
+        max= stack[j]
+
+print(count)

@@ -1,0 +1,44 @@
+import sys
+from collections import deque
+
+attempt = int(sys.stdin.readline())
+
+// 일반적인 리스트와 pop 메소드를 활용하면 O(n)의 시간복잡도를 가지지만 deque자료구조 사용 시 O(1)의 시간복잡도를 가져 시간초과없이 문제해결 가능
+student = deque()
+prefer = deque()
+
+lista = []
+listb = []
+
+for _ in range(attempt):
+    inputs = list(map(int, sys.stdin.readline().split()))
+    if inputs[0] == 1:
+        student.append(inputs[1])
+        prefer.append(inputs[2])
+    elif inputs[0] == 2:
+        if inputs[1] == prefer[0]:
+            lista.append(student[0])
+            student.popleft()
+            prefer.popleft()
+        else:
+            listb.append(student[0])
+            student.popleft()
+            prefer.popleft()
+
+lista.sort()
+listb.sort()
+
+// deque자료구조는 sort 메소드를 사용할 수 없기 때문에(list에서만 사용가능) sorted로 정렬. 
+student = sorted(student)          
+
+if lista == []:
+    lista.append("None")
+if listb == []:
+    listb.append("None")
+if student == []:
+    student.append("None")
+
+// 요소만 출력하고 싶을 때, join메소드를 사용하거나 위와 같이 *로 출력가능.
+print(*lista)
+print(*listb)
+print(*student)
