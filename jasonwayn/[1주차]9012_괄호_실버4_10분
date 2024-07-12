@@ -1,0 +1,25 @@
+import sys
+n=int(sys.stdin.readline())
+switch=0
+for i in range(n):
+    stack=[]
+    switch=0
+    inp=sys.stdin.readline().strip()
+    for j in range(len(inp)):
+        if inp[j]=='(':
+            stack.append(inp[j])
+        else:
+            try:  #list 없는데 pop시 indexerror
+                a=stack.pop()
+            except:
+                print("NO")
+                switch=1
+                break
+            if a!='(':
+                print("NO")
+                switch=1
+                break
+    if switch==0 and len(stack)==0:
+        print("YES")
+    elif switch==0 and len(stack)!=0:
+        print("NO")

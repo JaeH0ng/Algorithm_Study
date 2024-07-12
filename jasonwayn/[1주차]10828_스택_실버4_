@@ -1,0 +1,43 @@
+import sys
+
+def push(stack,n):
+    stack.append(n)
+
+def pop(stack):
+    if len(stack)==0:
+        return -1
+    else:
+        a=stack.pop()
+        return a
+
+def size(stack):
+    return len(stack)
+
+def empty(stack):
+    if(len(stack)==0):
+        return 1
+    else:
+        return 0
+
+def top(stack):
+    if len(stack)==0:
+        return -1
+    else:
+        return stack[len(stack)-1]
+
+n=int(input())
+stack=[]
+
+for i in range(n):
+    inp=sys.stdin.readline().strip()
+    if inp[:4]=='push':
+        push(stack,inp[5:])
+    elif inp =='pop':
+        print(pop(stack))
+    elif inp =='size':
+        print(size(stack))
+    elif inp=='empty':
+        print(empty(stack))
+    elif inp=='top':
+        print(top(stack))
+

@@ -1,0 +1,16 @@
+n,k=map(int,input().split())
+list=[]
+for i in range(n):
+    list.append(i+1)
+index=-1
+print("<",end='')
+
+while(len(list)!=0):
+    index=(index+k)%len(list)
+    print(list[index],end='')
+    del list[index]
+    if(len(list)!=0):
+        print(", ",end='')
+    index-=1
+
+print(">",end='')
