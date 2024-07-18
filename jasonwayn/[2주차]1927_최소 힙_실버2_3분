@@ -1,0 +1,18 @@
+import sys
+import heapq
+input=sys.stdin.readline
+
+
+heap=[]
+n=int(input())
+for i in range(n):
+    a=int(input())
+    if a!=0:
+        heapq.heappush(heap,a)
+    else:
+        try:
+            b=heapq.heappop(heap)
+            print(b)
+        except:
+            print(0)
+        
