@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main(){
+    int t = 0;
+    cin >> t; // 테스트 케이스의 수 입력
+    
+    for(int i = 0; i < t; i++){
+        int n, m;
+        cin >> n >> m;
+        
+        // 비행기에 대한 정보 - 답안을 구하는데에 필요하지 않으므로, 무시한다.
+        for(int j = 0; j < m; j++){ 
+            int a, b;
+            cin >> a >> b;
+        }
+        
+        // 어떤 트리에서, 간선의 개수는 항상 n-1이다.
+	// 따라서 최소 비행기 종류의 개수는 항상 n - 1
+        cout << n - 1 << endl;
+    }
+    
+    return 0;
+}

@@ -1,0 +1,66 @@
+// 핵심 로직에서 막혀서 다른 사람 코드 참고하여 풀었습니다.
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+    int n, m;
+
+    cin>>n>>m;
+    for (int i = 0; i < n-1; i++)
+    {
+        if (i < n - m)
+        {
+            cout<< i << " " << i+1 <<"\n";
+        }
+
+        else
+        {
+            cout<< n-m << " " << i+1 << "\n";
+        }
+    }
+    return 0;
+}
+-------
+작성하던 코드
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    // 시간 초과 관련 코드
+    //ios::sync_with_stdio(false);
+    //cin.tie(NULL);
+    int n;
+    int m;
+    cin >> n >> m;
+
+    int v;
+    int adder = 1;
+    // 정점의 개수가 n개면 간선의 개수는 n-1개 
+    // 출력에 적혀있는 숫자들 가운데, 1번만 적힌 노드 개수가 m개이면 된다.
+    for(int i=0; i<n-1; i++){
+        if(m>=1){
+            v=i;
+            cout << v << ' '<< v+1 << endl;
+        }else{
+            if(v+adder <n){
+                cout << v << ' ' << v+adder << endl;
+                adder++;
+            }else{
+                adder=1;
+                v++;
+                cout << v << ' ' << v+adder << endl;
+            }
+            
+        }
+        m--;
+    }
+    
+    
+    
+    return 0;
+}
