@@ -1,0 +1,49 @@
+import sys
+input=sys.stdin.readline
+def preorder(trees,count):
+    i=0
+    n=count
+    l1=['A']
+    print(trees[0])
+    while(trees[0]!='.'):
+        if 2*i+1<=n and trees[2*i+1]!='.':
+            i=2*i+1
+            print(trees[i])
+            l1.append(trees[i])
+        elif 2*i+2<=n and trees[2*i+2]!='.':
+            i=2*i+2
+            print(trees[i])
+            l1.append(trees[i])
+        else:
+            if trees[i] not in l1:
+                print(trees[i],end="")
+            trees[i]='.'    
+            i=int((i-1)//2)
+    print("")
+
+
+def inorder(trees,n):
+    
+
+
+tree=[]
+n=int(input())
+count=2**n-1
+for i in range(count):
+    tree.append('.')
+
+
+for i in range(n):
+    l1=[]
+    l1.extend(input().split())
+    if i==0:
+        tree[0]=(l1[0])
+        tree[1]=(l1[1])
+        tree[2]=(l1[2])
+    else:
+        tree[tree.index(l1[0])*2+1]=l1[1]
+        tree[tree.index(l1[0])*2+2]=l1[2]
+
+preorder(tree,count)
+      
+

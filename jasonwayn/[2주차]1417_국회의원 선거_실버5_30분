@@ -1,0 +1,37 @@
+import sys
+import heapq
+input=sys.stdin.readline
+
+class MaxHeap:
+    def __init__(self):
+        self.heap = []
+
+    def push(self, item):
+        heapq.heappush(self.heap, -item)
+
+    def pop(self):
+        return -heapq.heappop(self.heap)
+
+    def decrease(self):
+        maxx= self.pop()
+        maxx-= 1
+        self.push(maxx)
+       
+    def peek(self):
+        return -self.heap[0]
+
+    def __len__(self):
+        return len(self.heap)
+
+n=int(input())
+target=int(input())
+count=0
+heap=MaxHeap()
+for i in range(n-1):
+    heap.push(int(input().strip()))
+while(heap and target<=heap.peek()): # heap 비어있을 경우 고려 안하면 indexerror //n==1일 경우 
+    heap.decrease()
+    target+=1
+    count+=1
+
+print(count)
