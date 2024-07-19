@@ -1,0 +1,18 @@
+# 가족사정이 생겨 배정받은 문제만 먼저 올려드립니다 ㅠㅠ. 나머지 문제는 다음주내로 3주차 문제와 같이 올리겠습니다! 
+
+import sys
+import heapq                            # 파이썬에 내장된 heapq라는 모듈을 통해 날먹이 가능합니다. heappush, heappop, heapify등의 함수 지원.
+
+attempt = int(sys.stdin.readline())
+
+heap = []
+
+for _ in range(attempt):
+    number = int(sys.stdin.readline())
+    if number == 0:
+        if heap:                        # len(heap) > 0 해도 되지만 더 간결하게 하기위해 heap으로 작성하였습니다. 
+            print(heapq.heappop(heap))  # heapq.heappop(heap)은 heap의 최소 원소를 pop하고 return을 같이합니다. 이를 출력해주기위해 print 사용. 
+        else:
+            print(0)
+    else:
+        heapq.heappush(heap, number)
