@@ -7,7 +7,7 @@
   </tr>
   <tr>
     <td>스터디 장소</td>
-    <td>(1주차) 고려대 SK미래관 스터디룸</td>
+    <td>고려대 SK미래관 스터디룸</td>
   </tr>
   <tr>
     <td>정기 스터디 시간</td>
@@ -25,7 +25,7 @@
   </tr>
 </table>
 
-## 스터디 멤버(~7/2까지 모집합니다.)
+## 스터디 멤버
 <table>
  <tr>
     <td align="center"><a href="https://github.com/JaeH0ng"><img src="https://avatars.githubusercontent.com/JaeH0ng" width="130px;" alt=""></a></td>
