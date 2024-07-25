@@ -150,7 +150,7 @@ git commit -m "[1주차]_BOJ_2557_Hello World_브론즈5_5분" -m "https://www.a
 | 3주차 | DFS&BFS | [1260번](https://www.acmicpc.net/problem/1260) (Alchernix)| DFS와 BFS | 실버2 |
 | 3주차 | DFS&BFS | [2606번](https://www.acmicpc.net/problem/2606) (rlaau)| 바이러스 | 실버3 |
 | 3주차 | DFS&BFS | [1012번](https://www.acmicpc.net/problem/1012) (JaeH0ng)| 유기농 배추 | 실버2 |
-| 3주차 | DFS&BFS | [7576번](https://www.acmicpc.net/problem/7576) | 토마토 | 골드5(도전문제) |
+| 3주차 | DFS&BFS | [7576번](https://www.acmicpc.net/problem/7576) | 토마토 | 골드5 |
 |------|--------|-----------|------------|-----------|
 | 4주차 | 해시 | [9933번](https://www.acmicpc.net/problem/9933) (rlaau)| 민균이의 전화번호 | 브론즈1 |
 | 4주차 | 해시 | [10815번](https://www.acmicpc.net/problem/10815) (JaeH0ng)| 숫자 카드 | 실버5 |
