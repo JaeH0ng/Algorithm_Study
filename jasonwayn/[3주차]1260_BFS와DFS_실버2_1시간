@@ -1,0 +1,41 @@
+import sys
+from collections import deque
+input=sys.stdin.readline
+sys.setrecursionlimit(10**6)
+
+def DFS(matrix,visited,k):
+    visited[k]=1
+    print(k, end=' ')
+    for i in range(len(matrix[k])):
+        if matrix[k][i]==1 and not visited[i]:
+            DFS(matrix,visited,i)
+    
+def BFS(matrix,vistied,k):
+    que2=deque()
+    que2.append(k)
+    while que2:
+        pos=que2.popleft()
+        if not visited[pos]:
+            print(pos, end=' ')
+            visited[pos]=1
+            for i in range(len(matrix[pos])):
+                if matrix[pos][i]==1 and not visited[i]:
+                    que2.append(i)
+
+    
+n,m,v=map(int,input().split())
+matrix=[[0]*(n+1) for _ in range(n+1)]
+visited=[0]*(n+1)
+for _ in range(m):
+    x,y=map(int,input().split())
+    matrix[x][y]=matrix[y][x]=1
+DFS(matrix,visited,v)
+print()
+visited=[0]*(n+1)
+
+BFS(matrix,visited,v)
+
+
+
+
+

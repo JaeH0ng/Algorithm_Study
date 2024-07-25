@@ -1,0 +1,23 @@
+import sys
+
+def DFS(matrix,visited,k):
+    visited[k]=True
+    for i in range(len(matrix[k])):
+        if matrix[k][i]==1 and not visited[i]:
+            DFS(matrix,visited,i)
+
+input=sys.stdin.readline
+
+n=int(input())
+connect=int(input())
+matrix=[[0]*(n+1) for _ in range(n+1)]
+visited=[False]*(n+1)
+for _ in range(connect):
+    x,y=map(int,input().split())
+    matrix[x][y]=matrix[y][x]=1
+DFS(matrix,visited,1)
+count=0
+for i in range(n+1):
+    if visited[i]==True:
+        count+=1
+print(count-1)
