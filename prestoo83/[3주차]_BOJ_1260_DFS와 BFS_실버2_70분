@@ -1,0 +1,47 @@
+# 60분안에 풀지못해 약간의 ChatGPT의 도움을 받았습니다. 
+# 기본 graph를 {}로 하기보다는, 미리 key들을 넣어놓는게 더 편하네요
+
+from collections import deque
+
+v, e, s = map(int, input().split())
+
+graph = {i: [] for i in range(1, v + 1)}
+
+def dfs(dictionary, start):
+    isvisit = set()
+    stack = [start]
+    vertexlist = []
+
+    while stack:
+        vertex = stack.pop() 
+        if vertex not in isvisit:  
+            isvisit.add(vertex)  
+            vertexlist.append(vertex)
+            
+            neighbors = sorted((neighbor for neighbor in graph[vertex] if neighbor not in isvisit and neighbor), reverse=True)
+            stack.extend(neighbors)
+    return vertexlist
+
+def bfs(dictionary, start):
+    isvisit = set()
+    queue = deque([start])
+    vertexlist = []
+
+    while queue:
+        vertex = queue.popleft() 
+        if vertex not in isvisit:  
+            isvisit.add(vertex)  
+            vertexlist.append(vertex)  
+            
+            neighbors = sorted(neighbor for neighbor in graph[vertex] if neighbor not in isvisit and neighbor)
+            queue.extend(neighbors)
+
+    return vertexlist
+
+for _ in range(e):
+    v1, v2 = map(int, input().split())
+    graph[v1].append(v2)
+    graph[v2].append(v1)
+
+print(*dfs(graph, s))
+print(*bfs(graph, s))

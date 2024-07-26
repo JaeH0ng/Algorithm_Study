@@ -1,0 +1,30 @@
+# 시작 노드와 연관되는 모든 경로를 방문해야하므로 DFS 사용. 
+# 백준 1260번 BFS와 DFS 코드 중 DFS 코드 사용. 
+
+def dfs(dictionary, start):
+    isvisit = set()
+    stack = [start]
+    vertexlist = []
+
+    while stack:
+        vertex = stack.pop() 
+        if vertex not in isvisit:  
+            isvisit.add(vertex)  
+            vertexlist.append(vertex)
+            
+            neighbors = sorted((neighbor for neighbor in graph[vertex] if neighbor not in isvisit and neighbor), reverse=True)
+            stack.extend(neighbors)
+    return vertexlist
+
+v = int(input())
+e = int(input())
+
+graph = {i: [] for i in range(1, v + 1)}
+
+for _ in range(e):
+    v1, v2 = map(int, input().split())
+    graph[v1].append(v2)
+    graph[v2].append(v1)
+
+# 전염된 컴퓨터만을 카운팅하므로 시작 정점을 빼줘야 함. 
+print(len(dfs(graph, 1))-1)
