@@ -1,0 +1,41 @@
+import sys
+sys.setrecursionlimit(10**6) #necessary
+def DFS(matrix,visited,a,b):
+    if a<0 or a>=m or b<0 or b>=n : #index 체크 미리 
+        return
+    if visited[b][a] or matrix[b][a]==0:
+        return
+    visited[b][a]=True
+    DFS(matrix,visited,a+1,b)
+    DFS(matrix,visited,a-1,b)
+    DFS(matrix,visited,a,b+1)
+    DFS(matrix,visited,a,b-1)
+    
+input=sys.stdin.readline
+
+case=int(input())
+for _ in range(case):
+    m,n,k=map(int,input().split())
+
+    matrix=[[0]*m for _ in range(n)]
+    visited=[[False]*m for _ in range(n)]
+    coordinate=[]
+    for _ in range(k):
+        x,y=map(int,input().split())
+        coordinate.append([x,y])
+        matrix[y][x]=1 
+
+
+    count=0
+    p=0
+    while(p<k):
+        p2=coordinate[p]
+        if not visited[p2[1]][p2[0]]:
+            count+=1
+            DFS(matrix,visited,p2[0],p2[1])
+        p+=1
+    print(count)
+
+
+    #while문 개선
+    # for x,y in coordinate:으로 가능
