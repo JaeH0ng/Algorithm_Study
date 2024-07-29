@@ -1,5 +1,5 @@
 import sys
-from collections import deque # que, stack 연산속도 o(n)->o(1)
+from collections import deque # que, stack 좌측 데이터 삭제 연산속도 o(n)->o(1)
 
 n=int(input())
 waiting=deque()
@@ -11,9 +11,9 @@ for i in range(n):
     if list2[0]==1:
         waiting.append(list2)
     else:
-        if waiting[0][2]==list2[1]:
+        if waiting[0][2]==list2[1]: 
             A.append(waiting.popleft()[1]) # del보다 pop이 코드 길이 짧음 popleft()[1] ***
-        else:
+        else:   
             B.append(waiting.popleft()[1])
 
 #if len(waiting)!=0:
@@ -21,7 +21,7 @@ for i in range(n):
         #C.append(waiting[i][1])
 if len(waiting)!=0:
     for i in waiting:
-        C.append(i[1])
+        C.append(i[1]) 
 
 A.sort()
 B.sort()
