@@ -1,0 +1,11 @@
+# system 모듈 import해도 되지만 sys.stdin.readline()은 개행문자를 포함해 제거작업이 따로 필요하여 import없이 진행
+
+attempt = int(input())
+words = []
+
+for _ in range(attempt):
+    word = input() 
+    words.append(word)
+    if word[::-1] in words:
+        print(len(word), word[len(word)//2])
+        break
