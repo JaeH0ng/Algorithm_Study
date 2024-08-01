@@ -1,0 +1,16 @@
+num1 = int(input())
+having = set(map(int, input().split()))  # 이 부분 list로하면 시간복잡도 O(num1*num2)되서 시간초과 발생, set으로 하면 O(1)이므로 해결. 
+num2 = int(input())
+comparing = list(map(int, input().split()))
+result = []
+
+for i in range(num2):
+    if comparing[i] in having:
+        result.append(1)
+    else:
+        result.append(0)
+
+print(*result)
+
+
+
