@@ -1,0 +1,9 @@
+attempt = int(input())
+words = []
+
+for _ in range(attempt):
+    word = input() 
+    words.append(word)
+    if word[::-1] in words:
+        print(len(word), word[len(word)//2])
+        break
