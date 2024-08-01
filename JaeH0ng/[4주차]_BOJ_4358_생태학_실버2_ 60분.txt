@@ -1,0 +1,46 @@
+#include<iostream>
+#include<unordered_map>
+#include<string>
+#include<vector>
+#include <algorithm>
+
+// 반올림 위한 헤더파일
+#include<cmath>
+
+using namespace std;
+
+int main(){
+    string input;
+    unordered_map<string, int> forest;
+    vector<string> key_vt;
+    
+    while(getline(cin, input)){
+        forest[input]++;
+    }
+    
+    // 사전식 정렬된 vector
+    for(const auto& pair : forest){
+        key_vt.push_back(pair.first);
+    }
+    sort(key_vt.begin(), key_vt.end());
+    
+    
+    // 전체 나무 개수
+    int all_count =0;
+    for(const auto& pair : forest){
+        all_count += pair.second;
+    }
+    
+    for(const auto& keys : key_vt){
+        // 소수점 4째 자리까지 반올림 하는 코드
+        double percentage = (forest[keys] / double(all_count)) * 100;
+        percentage = round(percentage * 10000);
+        percentage /=10000;
+        
+        // %s : const chat* 형식의 문자열과
+        // %.4f : 소수점 이하 4자리(4자리 이전에 계산 끝나는 경우도 있을거니까) 출력
+        printf("%s %.4f\n", keys.c_str(), percentage);
+    }
+    
+    return 0;
+}

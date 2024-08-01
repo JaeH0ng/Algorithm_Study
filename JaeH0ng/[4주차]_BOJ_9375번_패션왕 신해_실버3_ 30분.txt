@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+#include <unordered_map>
+using namespace std;
+
+int main(){
+    /*
+    예를 들어 의상 a가 x개, 의상 b가 y개, 의상 c가 z개라고 하면 
+    전체 가능한 경우의 수는 (x+1)*(y+1)*(z+1)-1이다.
+    */
+    int nInput;
+    cin >> nInput;
+    cin.ignore();
+    
+    for(int i=0; i<nInput; i++){
+        int mInput;
+        cin >> mInput;
+        
+        unordered_map<string, int> hashMap;
+        for(int j=0; j<mInput; j++){
+            string name, type;
+            cin >> name >> type;
+            hashMap[type]++;
+        }
+        
+        int result=1;
+        for(const auto& pair : hashMap){
+            result *= pair.second + 1;
+        }
+        cout << result -1 << endl;
+        
+    }
+    
+    return 0;
+}

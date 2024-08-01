@@ -1,0 +1,59 @@
+#include <iostream>
+#include <unordered_map>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int main(){
+    // 입출력 속도 최적화
+    ios::sync_with_stdio(false); 
+    cin.tie(NULL);
+
+
+    int nInput;
+    cin >> nInput;
+    unordered_map<signed int, int> hashMap;
+    
+    for(int i=0; i<nInput; i++){
+        signed int card;
+        cin >> card;
+        // 해시맵에 카드 추가
+        hashMap[card]++;
+    }
+    
+    int mInput;
+    cin >> mInput;
+    
+    // 답안을 한번에 모아 출력할 용도의 vector
+    vector<int> results;
+    
+    for(int i=0; i<mInput; i++){
+        signed int card;
+        cin >> card;
+        /* unordered_map의 find()함수는 
+        key가 있으면 해당 key의 interator를,
+        key가 없으면 hashMap.end()를 반환한다.
+        */
+        /*if(hashMap.find(card) != hashMap.end()){
+            cout << 1 << endl;
+        }else{
+            cout << 0 << endl;
+        }*/
+        // 근데 이렇게 하니까 백준에서 시간초과 뜸 - vector로 한번에 답안을 모아서 출력하는 방식으로 수정해봄
+        if(hashMap.count(card)){
+            results.push_back(1);
+        } else{
+            results.push_back(0);
+        }
+
+    }
+    // 결과 출력
+    for(int result: results){
+        cout << result << '\n';
+    }
+    
+    return 0;
+}
+
+

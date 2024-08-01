@@ -1,0 +1,44 @@
+#include <iostream>
+#include <unordered_map>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    int nInput;
+    cin >> nInput;
+    cin.ignore(); // 뒤에 문자열 받으니 공백문자 제거용
+    
+    // 해시 맵에 <입력 문자열, 횟수>를 저장
+    unordered_map<string, int> hashMap;
+    string word;
+    string reverseWord;
+    for(int i=0; i<nInput; i++){
+        getline(cin, word);
+        
+        // 뒤집은 문자열 생성
+        reverseWord = word;
+        reverse(reverseWord.begin(), reverseWord.end());
+        
+        // 두 문자열을 해시맵에 추가
+        hashMap[word]++;
+        hashMap[reverseWord]++;
+    }
+    
+    // 해시맵에서 2번 저장된 문자열을 출력
+    // 해시맵의 경우, iterator를 사용하여 for문을 돌린다
+    unordered_map<string, int>::iterator iter;
+    for(iter = hashMap.begin(); iter!=hashMap.end(); ++iter){
+        string key = iter->first;
+        int count = iter->second;
+        
+        if(count>1){
+            int length = key.length();
+            string middle(1, key[length / 2]);
+            cout << length << ' ' << middle << endl;
+            return 0;
+        }
+    }
+    
+    return 0;
+}

@@ -1,0 +1,110 @@
+// 시간초과 뜬 코드
+
+#include <iostream>
+#include <string>
+#include <unordered_map>
+#include <vector> // 사전 역순 정렬 후 출력을 위한 vector
+#include <algorithm> // 정렬 위한 헤더파일
+using namespace std;
+
+int main(){
+    // 입출력 속도 최적화
+    ios::sync_with_stdio(false); 
+    cin.tie(NULL);
+
+
+    int nInput;
+    cin >> nInput;
+    
+    unordered_map <string, bool> hashMap;
+    
+    for(int i=0; i<nInput; i++){
+        string name;
+        string state;
+        cin >> name >> state;
+        cin.ignore();
+        
+        if(state == "enter"){
+            hashMap[name]=true;
+        }else{
+            hashMap[name]=false;
+        }
+    }
+    
+    // 사전 역순 출력 위한 vector
+    vector<string> vt;
+    
+    unordered_map<string, bool>::iterator iter;
+    for(iter = hashMap.begin(); iter!=hashMap.end(); ++iter){
+        string name = iter -> first;
+        bool state = iter -> second;
+        
+        if(state){
+            vt.push_back(name);
+        }
+    }
+    // 역순으로 정렬
+    sort(vt.begin(), vt.end(), greater<string>());
+    
+    // 출력
+    for(int i=0; i<vt.size(); i++){
+        cout << vt[i] << endl;
+    }
+    
+    return 0;
+}
+
+
+
+
+// 이후 제출한 코드
+
+#include <iostream>
+#include <unordered_map>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    // 입출력 속도 최적화
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    int nInput;
+    cin >> nInput;
+    
+    unordered_map<string, bool> hashMap;
+    
+    for (int i = 0; i < nInput; ++i) {
+        string name, state;
+        cin >> name >> state;
+        
+        if (state == "enter") {
+            hashMap[name] = true;
+        } else {
+            hashMap[name] = false;
+        }
+    }
+    
+    // 현재 회사에 있는 사람들을 저장하기 위한 vector
+    vector<string> vt;
+    
+    unordered_map<string, bool>::iterator iter;
+    for(iter = hashMap.begin(); iter != hashMap.end(); iter++){
+        if(iter->second){
+            vt.push_back(iter->first);
+        }
+    }
+
+
+    // 벡터를 사전 역순으로 정렬
+    sort(vt.begin(), vt.end(), greater<string>());
+
+    // 출력
+    for (const auto& name : vt) {
+        cout << name << '\n';
+    }
+
+    return 0;
+}
