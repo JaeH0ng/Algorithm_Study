@@ -1,0 +1,15 @@
+# 저세상 실행속도 (4612ms)
+
+num = int(input())
+memberset = set()
+
+for _ in range(num):
+    member, isin = input().split()
+    if isin == "enter":
+        memberset.add(member)
+    else:
+        memberset.remove(member)
+
+realmemberlist = sorted(memberset, reverse=True)
+for member in realmemberlist:
+    print(member)
