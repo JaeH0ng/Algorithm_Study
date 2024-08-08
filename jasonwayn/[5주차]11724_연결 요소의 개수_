@@ -1,0 +1,37 @@
+import sys
+input=sys.stdin.readline
+
+def find(course, value):
+    for i, j in enumerate(course):
+        if value in j:
+            return i
+    return -1
+
+n,m=map(int,input().split())
+course=[]
+
+for _ in range(m):
+    a,b=map(int,input().split())
+    idx_a=find(course,a)
+    idx_b=find(course,b)
+    if idx_a==-1 and idx_b==-1:
+        course.append([a,b])
+    elif idx_a!=-1 and idx_b==-1:
+        course[idx_a].append(b)
+    elif idx_a==-1 and idx_b!=-1:
+        course[idx_b].append(a)
+    elif idx_a!=-1 and idx_b!=-1 and idx_a!=idx_b:
+        course[idx_a].extend(course[idx_b])
+        del course[idx_b]
+
+
+count=0
+cnt=0
+for i in course:
+    if i!=[]:
+        cnt+=len(i)
+        count+=1
+if m==0:
+    print(n)
+else:
+    print(count+(n-cnt)) # 간선 정보에 없는 노드 고려 안함. 5 2 / 1 2 , 3 4 => 기대출력 3임 2아니라
