@@ -1,0 +1,35 @@
+import sys
+input=sys.stdin.readline
+
+n=int(input())
+for _ in range(n):
+    m=int(input())
+    a=list(map(int,input().split()))
+    matrix=[]
+    for i in a:
+        matrix.append(i)
+    count=0
+    idx=0
+    idx2=0
+    p=0
+    while(1):
+        for i in range(len(matrix)):
+            if matrix[i]!=0:
+                idx=i+1
+                idx2=matrix[i]
+                break
+        course=[idx]
+        matrix[idx-1]=0
+        while(1):
+            if idx2 in course:
+                count+=1
+                matrix[idx2-1]=0
+                break
+            else:
+                course.append(idx2)
+                p=matrix[idx2-1]
+                matrix[idx2-1]=0
+                idx2=p
+        if all(i==0 for i in matrix):
+            break
+    print(count)

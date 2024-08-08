@@ -7,7 +7,7 @@ m,n=map(int,input().split())
 matrix=[]
 for _ in range(n):
     matrix.append(list(map(int,input().split())))
-time=[[0]*m for _ in range(n)] #I cannot come up with making time matrix at first.
+time=[[0]*m for _ in range(n)] #cannot come up with making time matrix at first.
 
 queue=deque()
 for i in range(n):
