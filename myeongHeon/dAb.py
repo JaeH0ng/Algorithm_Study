@@ -26,7 +26,7 @@ sortedGraph={key: sorted(value) for key,value in graph.items()}
 
   
 dfsVisitList=list()
-def dfs(startNumber:int):
+def dfs(startNumber:int): 
   #방문에 추가
   dfsVisitList.append(startNumber)
   #작은 번호부터 방문하도록 하기
