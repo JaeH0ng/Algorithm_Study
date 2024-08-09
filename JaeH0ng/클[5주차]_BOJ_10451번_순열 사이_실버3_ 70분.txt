@@ -1,0 +1,41 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main(){
+    int t;  // 테스트 케이스 개수
+    cin >> t;
+
+    // 각 테스트케이스 실행
+    for(int i = 0; i < t; i++){
+        int n;  // 순열의 크기
+        cin >> n;
+
+        vector<int> permutation(n + 1);  // 순열을 저장하는 벡터
+        vector<bool> visited(n + 1, false);  // 방문 여부를 기록하는 벡터
+        int ans = 0;  // 사이클의 개수
+
+        // 순열 입력 받기
+        for(int j = 1; j <= n; j++){
+            cin >> permutation[j];
+        }
+
+        // 순열 사이클 찾기
+        for(int j = 1; j <= n; j++){
+            if (!visited[j]) {
+                ans++;  // 새로운 사이클을 찾았으므로 사이클 개수 증가
+                int current = j;
+
+                // 순열 사이클을 찾기 위해 탐색
+                while (!visited[current]) {
+                    visited[current] = true;
+                    current = permutation[current];
+                }
+            }
+        }
+
+        cout << ans << endl;  // 사이클의 개수를 출력
+    }
+
+    return 0;
+}

@@ -1,0 +1,60 @@
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+int n, m; // n: 세로 크기, m: 가로 크기
+
+// 이동 방향 배열
+int xpos_hori[2] = {0, 0}; // 가로 이동 시 x 변화 없음
+int ypos_hori[2] = {1, -1}; // 오른쪽, 왼쪽
+int xpos_verti[2] = {1, -1}; // 아래, 위
+int ypos_verti[2] = {0, 0}; // 세로 이동 시 y 변화 없음
+
+void dfs(int x, int y, vector<string> &field) {
+    char wood = field[x][y];
+    field[x][y] = '.'; // 방문 표시
+
+    if (wood == '-') {
+        for (int i = 0; i < 2; i++) {
+            int xx = x + xpos_hori[i];
+            int yy = y + ypos_hori[i];
+            if (xx < 0 || xx >= n || yy < 0 || yy >= m) continue; // 경계 체크
+            if (field[xx][yy] == '-') {
+                dfs(xx, yy, field);
+            }
+        }
+    } else if (wood == '|') {
+        for (int i = 0; i < 2; i++) {
+            int xx = x + xpos_verti[i];
+            int yy = y + ypos_verti[i];
+            if (xx < 0 || xx >= n || yy < 0 || yy >= m) continue; // 경계 체크
+            if (field[xx][yy] == '|') {
+                dfs(xx, yy, field);
+            }
+        }
+    }
+}
+
+int main() {
+    int ans = 0;
+    cin >> n >> m;
+    cin.ignore();
+    vector<string> field(n);
+
+    // 주어진 입력 받기
+    for (int i = 0; i < n; i++) {
+        getline(cin, field[i]);
+    }
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (field[i][j] == '|' || field[i][j] == '-') {
+                dfs(i, j, field);
+                ans++;
+            }
+        }
+    }
+    cout << ans << endl;
+    return 0;
+}
