@@ -8,7 +8,6 @@ def bfs(graph, startNumber: int, k: int):
     bfsVisitList[startNumber]=1
     flag = True
     
-    
     while bfsQue:
         poped = bfsQue.popleft()
         current_node = poped[0]
@@ -43,3 +42,5 @@ for key in graph:
     graph[key].sort()
 
 bfs(graph, X, K)
+
+#도전문제: 걍 벨만 포드+ bfs쓰면 될 거 같음.
