@@ -1,0 +1,35 @@
+# 1. 각 줄의 -와 |의 합을 count에 추가
+# 2. 행과 열을 반전시킨 후, 열에서 연속된 |는 실제로 1개처리지만 연속돼있는 만큼 중복계산되기 때문에 (연속돼있는 수 -1)를 count에서 빼줌.
+
+x, y = map(int, input().split())
+
+total = []
+count = 0
+
+for _ in range(x):
+    line = input()
+    total.append(line)
+
+    string = line[0]
+    for char in line[1:]:
+        if char != string[-1]:
+            string += char
+    count += string.count('-')
+    count += line.count('|')
+
+for i in range(y):
+    templine = [line[i] for line in total]
+    templine = ''.join(templine)
+    
+    j = 0
+    while j < len(templine):
+        if templine[j] == '|':
+            continuous = 0
+            while j < len(templine) and templine[j] == "|":
+                continuous += 1
+                j += 1
+            count -= continuous - 1
+        else:
+            j += 1
+     
+print(count) 

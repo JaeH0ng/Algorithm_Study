@@ -1,0 +1,39 @@
+# 저세상 실행속도 (4612ms)
+
+num = int(input())
+memberset = set()
+
+for _ in range(num):
+    member, isin = input().split()
+    if isin == "enter":
+        memberset.add(member)
+    else:
+        memberset.remove(member)
+
+realmemberlist = sorted(memberset, reverse=True)
+for member in realmemberlist:
+    print(member)
+
+# 전지전능한 ChatGPT
+
+import sys
+
+input = sys.stdin.read
+data = input().split()
+
+num = int(data[0])
+member_set = set()
+
+index = 1
+for _ in range(num):
+    member = data[index]
+    isin = data[index + 1]
+    if isin == "enter":
+        member_set.add(member)
+    else:
+        member_set.remove(member)
+    index += 2
+
+realmemberlist = sorted(member_set, reverse=True)
+for member in realmemberlist:
+    print(member)

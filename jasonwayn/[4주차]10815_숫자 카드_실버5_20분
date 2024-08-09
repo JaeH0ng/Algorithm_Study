@@ -1,0 +1,36 @@
+import sys
+input=sys.stdin.readline
+class HashTable:
+    def __init__(self, size):
+        self.size = size
+        self.table = [None] * size
+
+    def hash_function(self, key):
+        return abs((key)) % self.size
+
+    def insert(self, key):
+        index = self.hash_function(key)
+        if self.table[index] is None:
+            self.table[index] = []
+        self.table[index].append(key)
+
+    def search(self, key):
+        index = self.hash_function(key)
+        if self.table[index] is None:
+            return 0
+        for k in self.table[index]:
+            if k == key:
+                return 1
+        return 0
+
+
+h1=HashTable(1000)
+n=int(input())
+k=list(map(int,input().split()))
+for i in k:
+    h1.insert(i)
+n2=int(input())
+
+q=list(map(int,input().split()))
+for i in q:
+    print(h1.search(i))

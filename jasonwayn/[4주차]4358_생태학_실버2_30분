@@ -1,0 +1,19 @@
+import sys
+input=sys.stdin.readline
+
+dic={}
+overall=0
+while(1):
+    a=input().strip()
+    if not a:
+        break
+    if a not in dic:
+        dic[a]=1
+    else:
+        dic[a]+=1
+    overall+=1
+
+dic2=dict(sorted(dic.items()))
+for i in dic2:
+    print(i, end=" ")
+    print(f"{dic2[i]/overall*100:.4f}")

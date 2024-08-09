@@ -1,0 +1,26 @@
+def calculate_expression(*list):
+    total_sum = 1
+    for num in list:
+        total_sum *= (num + 1)
+    return total_sum - 1
+
+test = int(input())
+
+for _ in range(test):
+    case = int(input())
+
+    species = {}
+    partlist = []
+
+    for _ in range(case):
+        name, part = input().split()
+        partlist.append(part) 
+
+    for part in partlist:
+        if part in species:
+            species[part] += 1
+        else:
+            species[part] = 1
+
+    value = list(species.values())
+    print(calculate_expression(*value))

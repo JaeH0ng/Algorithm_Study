@@ -1,0 +1,40 @@
+import sys
+input=sys.stdin.readline
+
+def DFS(matrix,x,y,switch):
+    if x>=n or y>=n:
+        return
+    c=matrix[y][x]
+    if c>4 or c==0:
+        return
+    
+    if c==-1:
+        switch[0]=1
+        print("HaruHaru") 
+        return
+    
+    if c==1:
+        DFS(matrix,x,y+1,switch)
+        DFS(matrix,x+1,y,switch)
+    elif c==2:
+        DFS(matrix,x,y+2,switch)
+        DFS(matrix,x+2,y,switch)
+    #     DFS(matrix,x+1,y+1,switch)
+    # elif c==3:
+    #     DFS(matrix,x+1,y+2,switch)
+    #     DFS(matrix,x+2,y+1,switch)
+    # elif c==4 and x+2<n and y+2<n:
+    #     DFS(matrix,x+2,y+2,switch)
+    return
+    
+n=int(input())
+matrix=[]
+switch=[0] # switch=0과 차이// 가변객체 vs 불변객체
+for i in range(n):
+    a=list(map(int,input().strip().split()))
+    matrix.append(a)
+DFS(matrix,0,0,switch)
+if switch[0]==0:
+    print("Hing")
+
+    

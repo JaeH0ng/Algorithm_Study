@@ -1,0 +1,16 @@
+import sys
+input=sys.stdin.readline
+
+n=int(input())
+l1=[]
+l2=[]
+for _ in range(n):
+    a=input().strip()
+    l1.append(a)
+    l2.append(a[::-1])
+s1=set(l1)
+s2=set(l2)
+s3=s1&s2
+l3=list(s3)
+k=len(l3[0])
+print(k, l3[0][int((k-1)/2)])

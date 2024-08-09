@@ -1,0 +1,21 @@
+import sys
+input = sys.stdin.readline
+
+while True:
+    sang, sun = map(int, input().split())
+
+    if sang == 0 and sun == 0:
+        break
+
+    sangset = set()
+    sunset = set()
+
+    for _ in range(sang):
+        number = int(input().strip())
+        sangset.add(number)
+
+    for _ in range(sun):
+        number = int(input().strip())
+        sunset.add(number)
+
+    print(len(sangset.intersection(sunset)))
