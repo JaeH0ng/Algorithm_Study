@@ -9,3 +9,5 @@ for i in range(num):
     a, b = map(int, input().split())
 
     print(fac(b)//(fac(a)*fac(b-a)))
+
+# 만약 DP로 풀 경우, dp(a,b)에서 dp(a-1, b-1)부터 (a-1, a-1)될 때까지 sum
