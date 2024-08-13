@@ -1,0 +1,11 @@
+def fac(n):
+    if n > 1:
+        return n*fac(n-1)
+    else:
+        return 1
+num = int(input())
+
+for i in range(num):
+    a, b = map(int, input().split())
+
+    print(fac(b)//(fac(a)*fac(b-a)))
