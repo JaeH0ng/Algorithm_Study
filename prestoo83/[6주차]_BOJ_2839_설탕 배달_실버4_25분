@@ -1,0 +1,16 @@
+number = int(input())
+
+maxattmept = number//5
+count = []
+
+for i in range(0, maxattmept+1):
+    if (number - (i*5))%3 == 0:
+        count.append(i + (number - (i*5))//3)
+    else:
+        count.append(-1)
+
+if all(element == -1 for element in count):
+    print(-1)
+else:
+    reallist = [num for num in count if num >= 0]
+    print(min(reallist))

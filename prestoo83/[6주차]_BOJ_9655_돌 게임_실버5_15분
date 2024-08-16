@@ -1,0 +1,17 @@
+number = int(input())
+member = ["SK", "CY"]
+current = 0
+
+while True:
+    if number == 1:
+        print(member[current%2])
+        break
+    elif number == 2:
+        number -= 1
+        current +=1
+    elif number == 3:
+        print(member[current%2])
+        break
+    else:
+        number -=3
+        current += 1

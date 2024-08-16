@@ -1,0 +1,22 @@
+def dp(a, b, table = {}):
+    if a == 0:
+        return b
+    
+    if (a, b) in table:
+        return table[(a, b)]
+    
+    total = 0
+    for i in range(1, b+1):
+        total += dp(a-1, i, table)
+    
+    table[(a, b)] = total
+
+    return total
+
+attempt = int(input())
+
+for _ in range(attempt):
+    k = int(input())
+    n = int(input())
+
+    print(dp(k, n, table = {}))
