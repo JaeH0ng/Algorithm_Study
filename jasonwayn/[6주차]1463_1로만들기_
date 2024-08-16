@@ -1,0 +1,15 @@
+n=int(input())
+memo={}
+memo[1]=0
+memo[2]=1
+memo[3]=1
+for i in range(4,n+1):
+    l1=[memo[i-1]]
+    if i%3==0:
+        l1.append(memo[i//3])
+    if i%2==0:
+        l1.append(memo[i//2])
+    memo[i]=min(l1)+1
+
+
+print(memo[n])
