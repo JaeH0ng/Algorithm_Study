@@ -1,0 +1,43 @@
+#include<iostream>
+
+using namespace std;
+
+int nFamily[15][15];
+
+
+int getN(int k, int n){
+    
+    if(nFamily[k][n]!=-1){
+        return nFamily[k][n];
+    }else{
+	int result=0;
+        for(int i=1; i<=n; i++){
+            result += getN(k-1,i); // 이를 nFamily[k-1][i]로 적으면 아직 계산되지 않은 -1이 더해지게된다.
+        }
+	nFamily[k][n] = result;
+	return result;
+    }
+}
+
+int main(){
+    int t;
+    // [층][호]의 정수 값 저장
+    for (int i = 1; i < 15; i++) {
+        for (int j = 1; j < 15; j++) {
+            nFamily[i][j] = -1;
+        }
+    }
+    for(int i=1; i<15; i++){
+        nFamily[0][i]=i;
+    }
+    
+    
+    cin >> t;
+    for(int i=0; i<t; i++){
+        int k,n;
+        cin >> k >>n;
+        int ans = getN(k,n);
+        cout << ans << endl;
+    }
+    return 0;
+}

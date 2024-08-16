@@ -1,0 +1,29 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    int n;
+    int DP[5000]; //연산 횟수, 즉 봉지 개수
+    cin >> n;
+    DP[0]=5000; // 5000 : 엄청 큰 값
+    DP[1]=5000;
+    DP[2]=5000;
+    DP[3]=1;
+    DP[4]=5000;
+    DP[5]=1;
+    for(int i=6; i<=n; i++){
+        if(DP[i-3]!=5000 || DP[i-5]!=5000){
+            DP[i] = min(DP[i-3]+1, DP[i-5]+1);
+        }else{
+            DP[i]=5000;
+        }
+    }
+    if(DP[n]==5000){
+        cout << -1 << endl;
+    } else{
+        cout << DP[n]<<endl;
+    }
+    
+    return 0;
+}

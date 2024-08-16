@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+
+int cResult[30][30];
+int combination(int m, int n){
+    // m C n
+    if(cResult[m][n]!=-1){
+        return cResult[m][n];
+    } else {
+        int result;
+        result = combination(m-1, n-1) + combination(m-1, n);
+        cResult[m][n]=result;
+        return result;
+    }
+    
+}
+
+int main(){
+    int t;
+    // 테이블 초기화
+    for(int i=1; i<=30; i++){
+        for(int j=1; j<=30; j++){
+            // m C n
+            // m==n인 경우1, n=1인 경우 m
+            if(i==j){
+                cResult[i][j]=1;
+            }else if(j==1){
+                cResult[i][j]=i;
+            }else{
+                cResult[i][j]=-1;
+            }
+        }
+    }
+    
+    
+    cin >> t;
+    
+    for(int i=0; i<t; i++){
+        int n,m;
+        cin >> n >> m;
+        int ans = combination(m,n);
+        cout << ans << endl;
+    }
+    return 0;
+}

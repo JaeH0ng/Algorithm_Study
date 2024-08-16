@@ -1,0 +1,26 @@
+// 개념 활용 안하고 푼 풀이 : 짝수면 CY, 홀수면 SK
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    /*
+    1 SK
+    2 CY
+    3 SK
+    4 CY
+    5 SK
+    6 
+    */
+    int n;
+    cin >> n;
+    if(n%2==0){
+        cout << "CY" << endl;
+    }else{
+        cout << "SK"<< endl;
+    }
+    return 0;
+}
+
+// 개념 활용?
