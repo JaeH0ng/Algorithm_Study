@@ -34,40 +34,4 @@ int main(){
     cout << result << endl;
 
     return 0;
-}#include <iostream>
-#include <vector>
-#include <algorithm>
-using namespace std;
-
-int main(){
-    int n;
-    cin >> n;
-
-    vector<int> prev(3, 0); // 이전 집의 최소 비용을 저장하는 벡터
-    vector<int> curr(3, 0); // 현재 집의 최소 비용을 저장하는 벡터
-
-    // 첫 번째 집의 초기 비용 설정
-    cin >> prev[0] >> prev[1] >> prev[2];
-
-    // 두 번째 집부터 n번째 집까지 최소 비용 계산
-    for(int i = 2; i <= n; i++){
-        int pR, pG, pB;
-        cin >> pR >> pG >> pB;
-
-        // 현재 집을 빨강으로 칠할 때의 최소 비용
-        curr[0] = min(prev[1], prev[2]) + pR;
-        // 현재 집을 초록으로 칠할 때의 최소 비용
-        curr[1] = min(prev[0], prev[2]) + pG;
-        // 현재 집을 파랑으로 칠할 때의 최소 비용
-        curr[2] = min(prev[0], prev[1]) + pB;
-
-        // 이전 집의 비용을 현재 집의 비용으로 갱신
-        prev = curr;
-    }
-
-    // 마지막 집에서의 최소 비용
-    int result = min({prev[0], prev[1], prev[2]});
-    cout << result << endl;
-
-    return 0;
 }
