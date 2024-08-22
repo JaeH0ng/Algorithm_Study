@@ -1,0 +1,16 @@
+city = int(input())
+distances = list(map(int, input().split()))
+prices = list(map(int, input().split()))
+
+distances.insert(0, 0)
+minimum = 1000000000
+sum = 0
+
+for i in range(len(prices)):
+    if prices[i] < minimum:
+        sum += minimum * distances[i]
+        minimum = prices[i]
+    else:
+        sum += minimum * distances[i]
+
+print(sum)
