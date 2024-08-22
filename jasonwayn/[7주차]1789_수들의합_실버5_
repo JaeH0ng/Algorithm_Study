@@ -1,0 +1,20 @@
+s=int(input())
+l1=[]
+idx=1
+sum=0
+if s==2:
+    print(1)
+else:
+    while(1):
+        if sum<s:
+            sum+=idx
+            l1.append(idx)
+            idx+=1
+        elif sum==s:
+            print(len(l1))
+            break
+        elif sum>s:
+            print(len(l1)-1)
+            break
+
+
