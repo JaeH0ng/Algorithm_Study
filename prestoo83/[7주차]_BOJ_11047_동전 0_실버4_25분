@@ -1,0 +1,15 @@
+count, price = map(int, input().split())
+
+moneylist = []
+sum = 0
+
+for _ in range(count):
+    moneylist.append(int(input()))
+
+moneylist.reverse()
+
+for money in moneylist:
+    sum += price//money
+    price %= money
+
+print(sum)
