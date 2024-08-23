@@ -1,0 +1,18 @@
+import sys
+input=sys.stdin.readline
+
+n,k=map(int,input().split())
+coin=[]
+for _ in range(n):
+    coin.append(int(input()))
+coin.sort(reverse=True)
+result=0
+k2=k
+for i in coin:
+    if k2==0:
+        break
+    if k2//i!=0:
+        result+=k2//i
+        k2-=(k2//i)*i
+        
+print(result)
