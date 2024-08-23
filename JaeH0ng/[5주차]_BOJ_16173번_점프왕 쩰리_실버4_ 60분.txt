@@ -1,0 +1,61 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+// 전역변수로 선언
+int n;
+vector<vector<int>> field;
+
+bool move(int x, int y){ // x: row, y:col
+    // 종료 조건 : 맨 오른쪽 아래 도달 시 종료
+    if(x == n - 1 && y == n - 1){
+        return true;
+    }
+    
+    // 바닥에 적혀있는 값
+    int movableValue = field[x][y];
+    
+    // 이 코드 추가 안해서 메모리 초과 떴음
+    // 바닥 값이 0이면 이동할 수 없으므로 종료
+    if(movableValue == 0){
+        return false;
+    }
+    
+    // 아래쪽으로 이동
+    if(x + movableValue < n && move(x + movableValue, y)){
+        return true;
+    }
+
+    // 오른쪽으로 이동
+    if(y + movableValue < n && move(x, y + movableValue)){
+        return true;
+    }
+    
+    return false;
+}
+
+int main() {
+    cin >> n;
+    field.resize(n, vector<int>(n));
+
+    // 주어진 입력 받기
+    for (int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++){
+            cin >> field[i][j];
+        }
+    }
+    
+    if(move(0,0)){
+        cout << "HaruHaru" << endl;
+    } else{
+        cout << "Hing" << endl;
+    }
+    
+    return 0;
+}
+
+// 재귀 코드는 기본적으로 틀이 있다.
+/*
+1. 기저 조건 : 재귀 호출을 종료하는 조건
+2. 재귀 단계 : 문제를 더 작은 문제로 분할해서 재귀 호출
+*/

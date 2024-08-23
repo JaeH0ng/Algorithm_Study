@@ -1,0 +1,7 @@
+n=int(input())
+k=list(map(int,input().split()))
+k.sort()
+sum=0
+for i in range(len(k)):
+    sum+=(len(k)-i)*k[i]
+print(sum)

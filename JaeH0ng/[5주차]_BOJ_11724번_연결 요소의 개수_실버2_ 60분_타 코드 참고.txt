@@ -1,0 +1,51 @@
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+void dfs(int current_node, vector<vector<int>>& graph, vector<bool>& visited){
+    // 현재 노드는 방문 처리
+    visited[current_node]=true;
+    
+    // 현재 노드에 연결되어 있는 모든 이웃 노드에 DFS 수행
+    // graph 벡터는 현재 graph[1]={2,5}, graph[2]={1,5}... 와 같이 생김
+    for(int neighbor : graph[current_node]) {
+        if(!visited[neighbor]) {
+            dfs(neighbor, graph, visited);  // 재귀적으로 이웃 노드를 방문
+        }
+    }
+}
+
+int main(){
+    int n, m;
+    cin >> n>>m;
+    
+    vector<vector<int>> graph(n+1);
+    vector<bool> visited(n+1, false);
+    
+    // 간선 정보 입력
+    for(int i = 0; i < m; i++) {
+        int u, v;
+        cin >> u >> v;  // 간선의 두 끝점 u와 v 입력
+        graph[u].push_back(v);  // u와 v를 연결
+        graph[v].push_back(u);  // v와 u를 연결 (무방향 그래프)
+    }
+    
+    int connected_components = 0;  // 연결 요소의 개수
+
+    // 모든 노드에 대해 DFS 실행
+    for(int node = 1; node <= n; node++) {
+        // 해당 노드를 아직 방문하지 않았다면, 새로운 연결 요소 발견
+        if(!visited[node]) {
+            dfs(node, graph, visited);  // DFS 실행하여 연결된 모든 노드 방문
+            connected_components++;  // 새로운 연결 요소를 찾았으므로 개수 증가
+        }
+    }
+
+    // 연결 요소의 개수를 출력
+    cout << connected_components << endl;
+    
+    return 0;
+}
+
+

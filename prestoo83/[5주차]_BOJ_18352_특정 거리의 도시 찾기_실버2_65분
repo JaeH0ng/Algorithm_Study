@@ -1,0 +1,50 @@
+import sys
+from collections import deque
+
+input = sys.stdin.readline
+
+def build_graph(edges):
+    graph = {}
+    for u, v in edges:
+        if u not in graph:
+            graph[u] = []
+        graph[u].append(v)
+    return graph
+
+def bfs_with_distance_k(graph, start, k):
+    queue = deque([(start, 0)])  
+    visited = set()
+    visited.add(start)
+    destination = []
+
+    while queue:
+        node, distance = queue.popleft()
+
+        if distance == k:
+            destination.append(node)
+
+        if distance >= k:
+            break
+
+        if node in graph:  
+            for neighbor in graph[node]:
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.append((neighbor, distance + 1))
+
+    if destination:
+        destination.sort()
+        for node in destination:
+            print(node)
+    else:
+        print(-1)
+
+n, m, k, x = map(int, input().split())
+edges = []
+for _ in range(m):
+    a, b = map(int, input().split())
+    edges.append((a, b))
+
+graph = build_graph(edges)
+
+bfs_with_distance_k(graph, x, k)

@@ -1,0 +1,17 @@
+testcase = int(input())
+
+for _ in range(testcase):
+    case = int(input())
+    numberlist = list(map(int, input().split()))
+    visited = [False] * len(numberlist)
+    count = 0
+
+    for i in range(len(numberlist)):
+        if not visited[i]:
+            current = i
+            while not visited[current]:
+                visited[current] = True
+                current = numberlist[current] - 1
+            count += 1
+
+    print(count)

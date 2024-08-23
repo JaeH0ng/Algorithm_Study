@@ -1,0 +1,12 @@
+member = int(input())
+tasklist = list(map(int, input().split()))
+
+tasklist.sort()
+sum = 0
+total = 0
+
+for task in tasklist:
+    sum += task
+    total += sum
+
+print(total)

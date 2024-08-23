@@ -1,0 +1,40 @@
+number = int(input())
+
+memory = [0] * 1000001
+
+memory[1] = 0
+memory[2] = 1
+memory[3] = 1
+
+for i in range(4, number+1):
+    memory[i] = memory[i-1] + 1
+
+    if i%2 == 0:
+        memory[i] = min(memory[i], memory[i//2] + 1)
+    
+    if i%3 == 0:
+        memory[i] = min(memory[i], memory[i//3] + 1)
+
+print(memory[number])
+
+###########################
+
+# 아래 코드는 수기검산으로 하면 다 맞는데 정작 제출하면 오답처리,, 
+
+number = int(input())
+count = 0
+exlist = [2**i for i in range (0, 100)]
+
+while True:
+    if number == 1:
+        print(count)
+        break
+    elif number in exlist:
+        number = number//2
+        count += 1
+    elif number%3 == 0:
+        number = number//3
+        count += 1
+    else:
+        number -= 1
+        count += 1

@@ -1,0 +1,23 @@
+import sys
+input=sys.stdin.readline
+
+def func(a,b):
+    matrix=[]
+    for i in range(a+1):
+        l1=[]
+        if i==0:
+            for j in range(1,b+1):
+                l1.append(j)
+        else:
+            for j in range(b):
+                l1.append(sum(matrix[i-1][:j+1]))
+        matrix.append(l1)
+    return matrix[a][b-1]
+    
+
+n=int(input())
+for _ in range(n):
+    n1=int(input())
+    k1=int(input())
+    print(func(n1,k1))
+

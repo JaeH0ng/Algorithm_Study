@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    // 답안 숫자
+    int nCase=1;
+    
+    while(true){
+        int l,p,v;
+        cin >> l >> p >> v;
+        
+        // 반복문 종료
+        if(l==0&&p==0&&v==0){
+            return 0;
+        }
+        
+        int ans=v/p * l;
+        if(v%p<l){
+            ans += v%p;
+        }else{
+            ans += l;
+        }
+        
+
+        cout << "Case " << nCase << ": " << ans << endl;
+        nCase ++;
+
+    }
+    return 0;
+}

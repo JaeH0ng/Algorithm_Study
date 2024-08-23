@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    long s;
+    cin >> s;
+    long ans=0;
+    long x=sqrt(2*s);
+    for(long i=x; i>=1; i--){
+        if(i*i + i <=2*s){
+            ans = i;
+            break;
+        }
+    }
+    
+    cout << ans << endl;
+    return 0;
+}

@@ -1,0 +1,32 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+bool compare(int a, int b){
+    return a>b;
+}
+
+int main(){
+    int n, k;
+    cin >> n >> k;
+    // 동전 종류 저장
+    int coinL[n];
+    for(int i=0; i<n; i++){
+        cin >> coinL[i];
+    }
+    int ans=0;
+    // 내림차순 정렬
+    sort(coinL, coinL+n, compare);
+    for(int coin:coinL){
+        while(k>=coin){
+            k-=coin;
+            ans++;
+        }
+    }
+    if(k==0){
+        cout << ans << endl;
+    }else{
+        cout << "FAIL" << endl;
+    }
+    return 0;
+}
