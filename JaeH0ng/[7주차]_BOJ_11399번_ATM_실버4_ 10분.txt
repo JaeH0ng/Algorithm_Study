@@ -1,0 +1,28 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    int n;
+    cin >> n;
+    int pList[n];
+    // 배열에 값 저장
+    for(int i=0; i<n; i++){
+        int p_i;
+        cin >> p_i;
+        pList[i]=p_i;
+    }
+    
+    // 정렬
+    // sort(시작주소, 끝주소, 함수)
+    sort(pList, pList+n);
+    
+    int ans=0;
+    for(int i=0; i<n; i++){
+        ans += pList[i] * (n-i);
+    }
+    
+    cout << ans << endl;
+    
+    return 0;
+}

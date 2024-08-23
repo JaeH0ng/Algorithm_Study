@@ -1,0 +1,105 @@
+// 58점
+// 그리디 적용 x
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    
+    vector<long long> needed_gas(n-1);
+    vector<pair<long long, int>> city_price(n);
+    
+    // 필요한 기름 양을 순서대로 저장
+    for(int i = 0; i < n-1; i++) {
+        cin >> needed_gas[i];
+    }
+
+    // 각 도시의 리터당 기름 가격 저장 및 인덱스 기록
+    for(int i = 0; i < n; i++) {
+        cin >> city_price[i].first;
+        city_price[i].second = i; // 도시의 인덱스를 함께 저장
+    }
+    
+    // 주유소 가격을 오름차순으로 정렬
+    sort(city_price.begin(), city_price.end());
+    
+    // 총 비용을 계산할 변수
+    long long total_fee = 0;
+    vector<bool> visited(n-1, false); // 방문 여부를 체크하는 배열
+    int visited_count = 0; // 방문한 도로의 수
+
+    for(int i = 0; i < n; i++) {
+        int city_index = city_price[i].second; // 현재 주유소의 인덱스
+        
+        // 이 주유소 이후의 모든 도로를 커버하는데 필요한 기름을 채움
+        long long distance_to_travel = 0;
+        for(int j = city_index; j < n-1; j++) {
+            if(!visited[j]) {
+                distance_to_travel += needed_gas[j];
+                visited[j] = true; // 해당 도로를 방문했다고 표시
+                visited_count++;
+            }
+        }
+
+        // 주유소에서 채운 기름으로 모든 도로를 커버
+        total_fee += city_price[i].first * distance_to_travel;
+
+        // 모든 도로를 방문했다면 종료
+        if(visited_count == n-1) {
+            break;
+        }
+    }
+
+    cout << total_fee << endl;
+    
+    return 0;
+}
+
+// 100점
+// 그리디 적용
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    
+    vector<long long> needed_gas(n-1);
+    vector<long long> city_price(n);
+    
+    // 필요한 기름 양을 순서대로 저장
+    for(int i = 0; i < n-1; i++) {
+        cin >> needed_gas[i];
+    }
+
+    // 각 도시의 리터당 기름 가격 저장
+    for(int i = 0; i < n; i++) {
+        cin >> city_price[i];
+    }
+    
+    // 총 비용을 계산할 변수
+    long long total_fee = 0;
+    long long min_price = city_price[0];
+    
+    for(int i = 0; i < n-1; i++) {
+        // 현재 도시에서의 최소 가격 갱신
+        if(city_price[i] < min_price) {
+            min_price = city_price[i];
+        }
+        
+        // 최소 가격으로 다음 도시까지의 거리에 대해 비용 계산
+        total_fee += min_price * needed_gas[i];
+    }
+    
+    cout << total_fee << endl;
+    
+    return 0;
+}
