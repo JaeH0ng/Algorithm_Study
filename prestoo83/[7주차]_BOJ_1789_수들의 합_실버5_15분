@@ -1,0 +1,13 @@
+num = int(input())
+sum = 0
+count = 0
+
+for i in range(1, 4000000000):
+    if sum < num and sum + i + (i + 1) <= num:
+        sum += i
+        count += 1
+    elif sum < num and sum + i + (i + 1) > num:
+        count += 1
+        break
+
+print(count)
