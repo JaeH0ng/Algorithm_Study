@@ -1,0 +1,24 @@
+import sys
+input=sys.stdin.readline
+
+def func(l1,target):
+    start=0
+    end=len(l1)-1
+    while start<=end:
+        mid=(start+end)//2 
+        if target>l1[mid]:
+            start=mid+1
+        else:
+            end=mid-1
+    return start
+
+w=int(input())
+for _ in range(w):
+    n,m=map(int,input().split())
+    a=list(map(int,input().split()))
+    b=list(map(int,input().split()))
+    b.sort()
+    cnt=0
+    for i in a:
+        cnt+=func(b,i)
+    print(cnt)

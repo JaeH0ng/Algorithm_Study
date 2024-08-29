@@ -1,0 +1,40 @@
+import sys
+n,m=map(int,input().split())
+l1=list(map(int,input().split()))
+start=max(l1)
+end=sum(l1)
+
+ans=[]
+while(start<=end):
+    mid=(start+end)//2
+    sum2=0
+    cnt=0
+    minl=[]
+
+    for i in range(len(l1)):
+        if l1[i]>mid:
+            start=mid+1
+            break
+        else:
+            if sum2+l1[i]>mid:
+                minl.append(sum2)
+                cnt+=1
+                sum2=l1[i]
+            else:
+                sum2+=l1[i]
+
+    minl.append(sum2)
+    cnt+=1
+           
+    if cnt>m:
+        start=mid+1
+    
+    elif cnt<=m: # cnt==m일때 따로 나누면 안됨, 문제 이해 잘못함 처음에
+        end=mid-1
+        ans.append(max(minl))
+if ans:        
+    print(min(ans))
+            
+
+
+    

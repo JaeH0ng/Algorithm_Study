@@ -1,0 +1,24 @@
+import sys
+input=sys.stdin.readline
+
+def func(x,y,rate):
+    start=1
+    end=1000000000
+    while start<=end:
+        mid=(start+end)//2
+        if int(((y+mid)*100/(x+mid)))==rate:
+            start=mid+1
+        else:
+            end=mid-1 
+    # if int(((y+mid)*100/(x+mid)))==rate: 처음에 mid로 해서 틀림, start로 해야함
+    if int((y+start)*100/(x+start))>rate:
+        return start
+    else: 
+        return -1
+
+
+x,y=map(int,input().split())
+z=(y*100)/x
+z=int(z)
+
+print(func(x,y,z))
