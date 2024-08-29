@@ -1,0 +1,24 @@
+import sys
+input=sys.stdin.readline
+
+def func(l1,target):
+    start=0
+    end=len(l1)-1
+    while start<=end:
+        mid=(start+end)//2
+        if target==l1[mid]:
+            return 1
+        elif target<l1[mid]:
+            end=mid-1
+        elif target>l1[mid]:
+            start=mid+1
+    return 0
+
+N=int(input())
+l1=list(map(int,input().split()))
+l1.sort()
+M=int(input())
+l2=list(map(int,input().split()))
+
+for i in l2:
+    print(func(l1,i),end=' ')
