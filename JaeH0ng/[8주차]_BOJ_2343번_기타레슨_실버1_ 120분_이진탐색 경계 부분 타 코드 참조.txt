@@ -1,0 +1,62 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+// mid로 나눌 수 있는 구간의 수를 구한뒤,
+// 구간의 개수가 m개 이하면 mid를 줄이고, m개 보다 많다면 mid를 증가시킨다.
+bool divide(const vector<int>& vt, int m, int maxSum) {
+    int currentSum = 0;
+    int count = 1; // 최소 1개 구간
+
+    for(int num : vt) {
+        if(currentSum + num > maxSum) {
+            count++;
+            currentSum = num;
+            if(count > m) {
+                return false;
+            }
+        } else {
+            currentSum += num;
+        }
+    }
+    return true;
+}
+
+int binary_search(int min, int max, const vector<int>& vt, int m) {
+    while(min < max) {
+        int mid = (min + max) / 2;
+        if(divide(vt, m, mid)) {
+            max = mid; // 가능하면 더 작은 값을 찾는다
+        } else {
+            min = mid + 1; // 불가능하면 더 큰 최댓값을 시도한다.
+        }
+    }
+    return min; // min은 가능한 최소의 최댓값을 의미
+}
+
+
+int main(){
+    int n,m;
+    cin >> n >> m;
+    
+    vector<int> vt;
+    int max = 0;
+    for(int i=0; i<n; i++){
+        int j;
+        cin >> j;
+        vt.push_back(j);
+        max +=j;
+    }
+    //max : sum, min : average
+    int min = max/m;
+    // int min = *max_element(vt.begin(), vt.end()); // 강의 길이 중 가장 긴거
+    // min ~ max 사이에서 적절한 값을 찾는다.
+    // 특정 값에 따라 어떤 기준으로 판단할건지
+    
+    int ans = binary_search(min, max, vt, m);
+    
+    cout << ans << endl;
+    
+    return 0;
+}

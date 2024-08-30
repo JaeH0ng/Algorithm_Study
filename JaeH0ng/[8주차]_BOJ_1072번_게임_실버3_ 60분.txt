@@ -1,0 +1,46 @@
+// 2020kb, 0ms
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+long long binary_search(long long x, long long y, long long min, long long max) {
+    
+    int percentage = y*100/x;
+    
+    
+    if(percentage>=99) return -1;
+    
+    long long mid = (min+max)/2;
+    int new_percentage = (y+mid)*100/(x+mid);
+    if(min>=max){
+        return min;
+    }
+    else if(new_percentage>percentage) {
+        return binary_search(x, y, min, mid);
+    }
+    else{
+        return binary_search(x, y, mid+1, max);
+    }
+    
+}
+           
+int main(){
+    
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    
+    // 최솟값과 최댓값을 정한 뒤, 그 중간값인 mid에 대해서 유효한가?를 찾아야 한다.
+    long long min = 0;
+    long long max = 1e9;
+    
+    
+    long long x, y;
+    cin >> x >> y;
+    
+    long long ans = binary_search(x, y, min, max);
+    
+    cout << ans << endl;
+    
+    return 0;
+}

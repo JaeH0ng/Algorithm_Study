@@ -1,0 +1,52 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+// 재귀
+int binary_search(int s, int e, int k, const vector<int>& vt) {
+    if(s > e) {
+        return s; // s : k보다 작은 원소의 개수
+    }
+    
+    int mid = (s + e) / 2;
+    if(vt[mid] >= k) return binary_search(s, mid - 1, k, vt);
+    else return binary_search(mid + 1, e, k, vt);
+}
+
+int main(){
+    int t;
+    cin >> t;
+    vector<int> vt_a;
+    vector<int> vt_b;
+    
+    for(int i=0; i<t; i++){
+        int n, m;
+        cin >> n >> m;
+        for(int i=0; i<n; i++){
+            int j;
+            cin >> j;
+            vt_a.push_back(j);
+        }
+        
+        for(int i=0; i<m; i++){
+            int j;
+            cin >> j;
+            vt_b.push_back(j);
+        }
+        sort(vt_b.begin(), vt_b.end());
+        
+        //a의 각 요소에 대해서 각각을 전부 binary_search한다.
+        int index;
+        int ans=0;
+        for(int i=0; i<n; i++){
+            int num = binary_search(0, m-1, vt_a[i], vt_b);
+            ans +=num;
+        }
+        cout << ans << endl;
+        // 백터 clear
+        vt_b.clear();
+        vt_a.clear();
+    }
+    return 0;
+}
